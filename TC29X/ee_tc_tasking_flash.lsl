@@ -8,7 +8,7 @@
  *
  */
 
-/** \file   ee_tc_tasking_flash.lsl
+/** \file   oe_tc_tasking_flash.lsl
  *  \brief  Linker script file for TASKING compiler (no iLLD integration)
  *  \author Errico Guidieri
  *  \date   2019
@@ -29,14 +29,14 @@ section_layout mpe:vtc:abs18
   }
 /*
   group abs18_not_cached ( run_addr=mem:mpe:lmuram/not_cached ) {
-    select ".zbss.ee_gbl_kernel_bss";
-    select ".zdata.ee_gbl_kernel_data";
-    select ".zdata.ee_kernel_data";
+    select ".zbss.oe_gbl_kernel_bss";
+    select ".zdata.oe_gbl_kernel_data";
+    select ".zdata.oe_kernel_data";
   }
 
   group api_abs18_not_cached ( run_addr=mem:mpe:lmuram/not_cached ) {
-    select ".zbss.ee_api_bss";
-    select ".zdata.ee_api_data";
+    select ".zbss.oe_api_bss";
+    select ".zdata.oe_api_data";
   }
 */
 }
@@ -52,14 +52,14 @@ section_layout mpe:vtc:linear
 /*
   group kernel_linear_not_cached (ordered, run_addr=mem:mpe:lmuram/not_cached)
   {
-    select ".bss.ee_gbl_kernel_bss";
-    select ".data.ee_gbl_kernel_data";
-    select ".data.ee_kernel_data";
+    select ".bss.oe_gbl_kernel_bss";
+    select ".data.oe_gbl_kernel_data";
+    select ".data.oe_kernel_data";
   }
 
   group api_linear_not_cached (ordered, run_addr=mem:mpe:lmuram/not_cached) {
-    select ".bss.ee_api_bss";
-    select ".data.ee_api_data";
+    select ".bss.oe_api_bss";
+    select ".data.oe_api_data";
   }
 */
 }

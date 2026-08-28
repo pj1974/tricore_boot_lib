@@ -23,7 +23,7 @@
  *
  */
 
-/** \file   ee_tc_gcc_flash.ld
+/** \file   oe_tc_gcc_flash.ld
  *  \brief  Linker script file for GCC compiler (no iLLD integration)
  *  \author Errico Guidieri
  *  \date   2018
@@ -445,7 +445,7 @@ SECTIONS
   .boffs           0 : { KEEP (*(.boffs)) }
 }
 
-/* The symbol __TRICORE_DERIVATE_NAME__ will be defined in the ee_tc_cstart.c and is
+/* The symbol __TRICORE_DERIVATE_NAME__ will be defined in the oe_tc_cstart.c and is
  * tested here to confirm that this memory map and the startup file will
  * fit together
 */

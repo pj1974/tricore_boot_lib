@@ -27,14 +27,14 @@
  */
 
 
-/** \file   ee_tc_cstart.c
+/** \file   oe_tc_cstart.c
  *  \brief  Start-up sequence, to be used in Erika's
  *          standalone configuration (no iLLD integration)
  *  \author Errico Guidieri
  *  \date   2017
  */
 
-#include "ee_internal.h"
+#include "oe_internal.h"
 #include <stdlib.h>
 
 /******************************************************************************

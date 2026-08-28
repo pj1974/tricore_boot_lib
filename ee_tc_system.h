@@ -1,4 +1,4 @@
-/** \file   ee_tc_system.h
+/** \file   oe_tc_system.h
  *  \brief  PLL configuration and System Timer Implementation, to be used in
             Erika's standalone configuration (no iLLD integration)
  *  \author Errico Guidieri
@@ -7,13 +7,13 @@
 #ifndef OSEE_TC_SYSTEM_H
 #define OSEE_TC_SYSTEM_H
 
-#include "ee_cfg.h"
-#include "ee_utils.h"
-#include "ee_platform_types.h"
-#include "ee_hal.h"
-#include "ee_tc_csfr.h"
-#include "ee_hal_internal_types.h"
-#include "ee_tc_src.h"
+#include "oe_cfg.h"
+#include "oe_utils.h"
+#include "oe_platform_types.h"
+#include "oe_hal.h"
+#include "oe_tc_csfr.h"
+#include "oe_hal_internal_types.h"
+#include "oe_tc_src.h"
 
 #if (defined(__cplusplus))
 extern "C" {
@@ -184,7 +184,7 @@ typedef struct OSEE_tc_SCU_WDTCPU_SR_bits_tag
 /** \brief [0:0] Watchdog Access Error Status Flag (rh) */
   unsigned int ae   : 1;
 /** \brief [1:1] Watchdog Overflow Error Status Flag (rh) */
-  unsigned int ee   : 1;
+  unsigned int oe   : 1;
 /** \brief [2:2] Watchdog Input Clock Status (rh) */
   unsigned int is0  : 1;
 /** \brief [3:3] Watchdog Enable/Disable Status Flag (rh) */

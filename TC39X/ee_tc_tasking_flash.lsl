@@ -8,7 +8,7 @@
  *
  */
 
-/** \file   ee_tc_tasking_flash.lsl
+/** \file   oe_tc_tasking_flash.lsl
  *  \brief  Linker script file for TASKING compiler (no iLLD integration)
  *  \author Errico Guidieri
  *  \date   2019
@@ -40,7 +40,7 @@ section_layout mpe:vtc:linear
   }
 
   group tc0_liner_const (run_addr=mem:mpe:pflash0) {
-    select "*(.CPU0.ee_kernel_const|.CPU0.ee_kernel_const*)";
+    select "*(.CPU0.oe_kernel_const|.CPU0.oe_kernel_const*)";
   }
 
   group tc0_liner_code (run_addr=mem:mpe:pflash0) {
@@ -48,7 +48,7 @@ section_layout mpe:vtc:linear
   }
 
   group tc1_liner_const (run_addr=mem:mpe:pflash1) {
-    select "*(.CPU1.ee_kernel_const|.CPU1.ee_kernel_const*)";
+    select "*(.CPU1.oe_kernel_const|.CPU1.oe_kernel_const*)";
   }
 
   group tc1_liner_code (run_addr=mem:mpe:pflash1) {
@@ -56,7 +56,7 @@ section_layout mpe:vtc:linear
   }
 
   group tc2_liner_const (run_addr=mem:mpe:pflash2) {
-    select "*(.CPU2.ee_kernel_const|.CPU2.ee_kernel_const*)";
+    select "*(.CPU2.oe_kernel_const|.CPU2.oe_kernel_const*)";
   }
 
   group tc2_liner_code (run_addr=mem:mpe:pflash2) {
@@ -64,7 +64,7 @@ section_layout mpe:vtc:linear
   }
 
   group tc3_liner_const (run_addr=mem:mpe:pflash3) {
-    select "*(.CPU3.ee_kernel_const|.CPU3.ee_kernel_const*)";
+    select "*(.CPU3.oe_kernel_const|.CPU3.oe_kernel_const*)";
   }
 
   group tc3_liner_code (run_addr=mem:mpe:pflash3) {
@@ -72,7 +72,7 @@ section_layout mpe:vtc:linear
   }
 
   group tc4_liner_const (run_addr=mem:mpe:pflash4) {
-    select "*(.CPU4.ee_kernel_const|.CPU4.ee_kernel_const*)";
+    select "*(.CPU4.oe_kernel_const|.CPU4.oe_kernel_const*)";
   }
 
   group tc4_liner_code (run_addr=mem:mpe:pflash4) {
@@ -80,7 +80,7 @@ section_layout mpe:vtc:linear
   }
 
   group tc5_liner_const (run_addr=mem:mpe:pflash5) {
-    select "*(.CPU6.ee_kernel_const|.CPU6.ee_kernel_const*)";
+    select "*(.CPU6.oe_kernel_const|.CPU6.oe_kernel_const*)";
   }
 
   group tc5_liner_code (run_addr=mem:mpe:pflash5) {

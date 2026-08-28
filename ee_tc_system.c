@@ -27,14 +27,14 @@
  *
  */
 
-/** \file   ee_tc_system.c
+/** \file   oe_tc_system.c
  *  \brief  PLL configuration and System Timer Implementation, to be used in
             Erika's standalone configuration (no iLLD integration)
  *  \author Errico Guidieri
  *  \date   2017
  */
 
-#include "ee_internal.h"
+#include "oe_internal.h"
 
 /* STM_SR Function Static storage declaration (if needed) */
 #if (defined(OSEE_SINGLECORE))

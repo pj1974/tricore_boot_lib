@@ -8,7 +8,7 @@
  *
  */
 
-/** \file   ee_tc_tasking_flash.lsl
+/** \file   oe_tc_tasking_flash.lsl
  *  \brief  Linker script file for TASKING compiler (no iLLD integration)
  *  \author Errico Guidieri
  *  \date   2019

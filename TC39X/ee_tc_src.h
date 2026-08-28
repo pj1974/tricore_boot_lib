@@ -28,7 +28,7 @@
  */
 
 
-/** \file   ee_tc_src.h
+/** \file   oe_tc_src.h
  *  \brief  Contains the OSEE_TC_SRC registers offset definition for tc39x.
  *  \author Errico Guidieri
  *  \date   2018

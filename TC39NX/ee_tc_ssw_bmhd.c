@@ -24,7 +24,7 @@
  * OR CONSEQUENTIAL DAMAGES, FOR ANY REASON WHATSOEVER.
  *
  */
-/** \file   ee_tc_ssw_bmhd.c
+/** \file   oe_tc_ssw_bmhd.c
  *  \brief  Contains Boot Header Mode configuration for TC3n families
  *  \author Errico Guidieri
  *  \date   2018
@@ -32,7 +32,7 @@
 /******************************************************************************
                                       Includes                          
 ******************************************************************************/
-#include "ee_internal.h"
+#include "oe_internal.h"
 
 /*******************************************************************************
 **                      Type definitions                                     **

@@ -28,7 +28,7 @@
  */
 
 
-/** \file   ee_tc_srch.h
+/** \file   oe_tc_srch.h
  *  \brief  Contains the OSEE_TC_SRC registers offset definition for tc27x.
  *  \author Errico Guidieri
  *  \date   2017
