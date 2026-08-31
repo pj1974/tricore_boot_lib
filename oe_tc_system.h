@@ -1,6 +1,6 @@
 /** \file   oe_tc_system.h
  *  \brief  PLL configuration and System Timer Implementation, to be used in
-            Erika's standalone configuration (no iLLD integration)
+            OpenERIKA standalone configuration (no iLLD integration)
  *  \author Errico Guidieri
  *  \date   2017
  */

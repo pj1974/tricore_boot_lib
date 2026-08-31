@@ -28,7 +28,7 @@
 
 
 /** \file   oe_tc_cstart.c
- *  \brief  Start-up sequence, to be used in Erika's
+ *  \brief  Start-up sequence, to be used in OpenERIKA
  *          standalone configuration (no iLLD integration)
  *  \author Errico Guidieri
  *  \date   2017
@@ -515,7 +515,7 @@ void OSEE_tc_core0_start(void)
   OSEE_tc_dsync();
 
 /* Set the PSW to its reset value in case of a warm start, set PSW.IS.
-   Global Stack is needed since ERIKA's use the stack to save context for the
+   Global Stack is needed since OpenERIKA use the stack to save context for the
    current TASK */
   OSEE_tc_set_csfr(OSEE_CSFR_PSW, OSEE_TC_START_PSW);
 
@@ -561,7 +561,7 @@ void OSEE_tc_core0_start(void)
   OSEE_tc_csa_init_inline(__CSA0, __CSA0_END);
 
 /* CPU and safety watchdogs are enabled by default. Disable them here to be
-   re-enabled by ERIKA or by the Application */
+   re-enabled by OpenERIKA or by the Application */
   OSEE_tc_disable_cpu_wdt(0U, cpu_wdt_pw);
   OSEE_tc_disable_safety_wdt(safety_wdt_pw);
 
@@ -621,7 +621,7 @@ void OSEE_tc_core1_start(void)
   OSEE_tc_dsync();
 
 /* Set the PSW to its reset value in case of a warm start, set PSW.IS.
-   Global Stack is needed since ERIKA's use the stack to save context for the
+   Global Stack is needed since OpenERIKA use the stack to save context for the
    current TASK */
   OSEE_tc_set_csfr(OSEE_CSFR_PSW, OSEE_TC_START_PSW);
 
@@ -667,7 +667,7 @@ void OSEE_tc_core1_start(void)
   OSEE_tc_csa_init_inline(__CSA1, __CSA1_END);
 
 /* CPU and safety watchdogs are enabled by default. Disable them here to be
-   re-enabled by ERIKA or by the Application */
+   re-enabled by OpenERIKA or by the Application */
   OSEE_tc_disable_cpu_wdt(1U, cpu_wdt_pw);
   OSEE_tc_disable_safety_wdt(safety_wdt_pw);
 
@@ -713,7 +713,7 @@ void OSEE_tc_core2_start(void)
   OSEE_tc_dsync();
 
 /* Set the PSW to its reset value in case of a warm start, set PSW.IS.
-   Global Stack is needed since ERIKA's use the stack to save context for the
+   Global Stack is needed since OpenERIKA use the stack to save context for the
    current TASK */
   OSEE_tc_set_csfr(OSEE_CSFR_PSW, OSEE_TC_START_PSW);
 
@@ -759,7 +759,7 @@ void OSEE_tc_core2_start(void)
   OSEE_tc_csa_init_inline(__CSA2, __CSA2_END);
 
 /* CPU and safety watchdogs are enabled by default. Disable them here to be
-   re-enabled by ERIKA or by the Application */
+   re-enabled by OpenERIKA or by the Application */
   OSEE_tc_disable_cpu_wdt(2U, cpu_wdt_pw);
   OSEE_tc_disable_safety_wdt(safety_wdt_pw);
 
@@ -806,7 +806,7 @@ void OSEE_tc_core3_start(void)
   OSEE_tc_dsync();
 
 /* Set the PSW to its reset value in case of a warm start, set PSW.IS.
-   Global Stack is needed since ERIKA's use the stack to save context for the
+   Global Stack is needed since OpenERIKA use the stack to save context for the
    current TASK */
   OSEE_tc_set_csfr(OSEE_CSFR_PSW, OSEE_TC_START_PSW);
 
@@ -852,7 +852,7 @@ void OSEE_tc_core3_start(void)
   OSEE_tc_csa_init_inline(__CSA3, __CSA3_END);
 
 /* CPU and safety watchdogs are enabled by default. Disable them here to be
-   re-enabled by ERIKA or by the Application */
+   re-enabled by OpenERIKA or by the Application */
   OSEE_tc_disable_cpu_wdt(3U, cpu_wdt_pw);
   OSEE_tc_disable_safety_wdt(safety_wdt_pw);
 
@@ -898,7 +898,7 @@ void OSEE_tc_core4_start(void)
   OSEE_tc_dsync();
 
 /* Set the PSW to its reset value in case of a warm start, set PSW.IS.
-   Global Stack is needed since ERIKA's use the stack to save context for the
+   Global Stack is needed since OpenERIKA use the stack to save context for the
    current TASK */
   OSEE_tc_set_csfr(OSEE_CSFR_PSW, OSEE_TC_START_PSW);
 
@@ -944,7 +944,7 @@ void OSEE_tc_core4_start(void)
   OSEE_tc_csa_init_inline(__CSA4, __CSA4_END);
 
 /* CPU and safety watchdogs are enabled by default. Disable them here to be
-   re-enabled by ERIKA or by the Application */
+   re-enabled by OpenERIKA or by the Application */
   OSEE_tc_disable_cpu_wdt(4U, cpu_wdt_pw);
   OSEE_tc_disable_safety_wdt(safety_wdt_pw);
 
@@ -990,7 +990,7 @@ void OSEE_tc_core6_start(void)
   OSEE_tc_dsync();
 
 /* Set the PSW to its reset value in case of a warm start, set PSW.IS.
-   Global Stack is needed since ERIKA's use the stack to save context for the
+   Global Stack is needed since OpenERIKA use the stack to save context for the
    current TASK */
   OSEE_tc_set_csfr(OSEE_CSFR_PSW, OSEE_TC_START_PSW);
 
@@ -1036,7 +1036,7 @@ void OSEE_tc_core6_start(void)
   OSEE_tc_csa_init_inline(__CSA6, __CSA6_END);
 
 /* CPU and safety watchdogs are enabled by default. Disable them here to be
-   re-enabled by ERIKA or by the Application */
+   re-enabled by OpenERIKA or by the Application */
   OSEE_tc_disable_cpu_wdt(5U, cpu_wdt_pw);
   OSEE_tc_disable_safety_wdt(safety_wdt_pw);
 
