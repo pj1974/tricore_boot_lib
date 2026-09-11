@@ -4,8 +4,8 @@
  *  \author Errico Guidieri
  *  \date   2017
  */
-#ifndef OSEE_TC_SYSTEM_H
-#define OSEE_TC_SYSTEM_H
+#ifndef OE_TC_SYSTEM_H
+#define OE_TC_SYSTEM_H
 
 #include "oe_cfg.h"
 #include "oe_utils.h"
@@ -23,42 +23,42 @@ extern "C" {
                             Frequencies References
  ******************************************************************************/
 /** PLL Frequencies Bound Defines (Min) */
-#define OSEE_TC_CLOCK_MIN          20000000U
-#if (defined(OSEE_TC_TC29X))
+#define OE_TC_CLOCK_MIN          20000000U
+#if (defined(OE_TC_TC29X))
 /** PLL Frequencies Bound Defines (Max) */
-#define OSEE_TC_CLOCK_MAX          300000000U /* 300Mhz for TC29x MCU */
+#define OE_TC_CLOCK_MAX          300000000U /* 300Mhz for TC29x MCU */
 #else
 /** PLL Frequencies Bound Defines (Max) */
-#define OSEE_TC_CLOCK_MAX          200000000U /* 200Mhz for other MCUs */
+#define OE_TC_CLOCK_MAX          200000000U /* 200Mhz for other MCUs */
 #endif
 
-#if (!defined(OSEE_TC_BOARD_FOSC))
+#if (!defined(OE_TC_BOARD_FOSC))
 /** Quartz frequency oscillation */
-#define OSEE_TC_BOARD_FOSC 20000000U
-#endif /* !OSEE_TC_BOARD_FOSC */
+#define OE_TC_BOARD_FOSC 20000000U
+#endif /* !OE_TC_BOARD_FOSC */
 
 /** Configure EVR (backup clock) frequency */
-#if (!defined(OSEE_TC_EVR_OSC_FREQUENCY))
-#define OSEE_TC_EVR_OSC_FREQUENCY 100000000U
-#endif /* !OSEE_TC_EVR_OSC_FREQUENCY */
+#if (!defined(OE_TC_EVR_OSC_FREQUENCY))
+#define OE_TC_EVR_OSC_FREQUENCY 100000000U
+#endif /* !OE_TC_EVR_OSC_FREQUENCY */
 
 /** CPU Clock Frequency */
-#if (defined(OSEE_BYPASS_CLOCK_CONFIGURATION))
-#if (!defined(OSEE_CPU_CLOCK))
-#define OSEE_CPU_CLOCK  OSEE_TC_EVR_OSC_FREQUENCY
-#endif /* !OSEE_CPU_CLOCK */
+#if (defined(OE_BYPASS_CLOCK_CONFIGURATION))
+#if (!defined(OE_CPU_CLOCK))
+#define OE_CPU_CLOCK  OE_TC_EVR_OSC_FREQUENCY
+#endif /* !OE_CPU_CLOCK */
 #else
-#if (!defined(OSEE_CPU_CLOCK))
-#define OSEE_CPU_CLOCK  OSEE_TC_CLOCK_MAX
-#endif /* !OSEE_CPU_CLOCK */
-#endif /* OSEE_BYPASS_CLOCK_CONFIGURATION */
+#if (!defined(OE_CPU_CLOCK))
+#define OE_CPU_CLOCK  OE_TC_CLOCK_MAX
+#endif /* !OE_CPU_CLOCK */
+#endif /* OE_BYPASS_CLOCK_CONFIGURATION */
 
 /*******************************************************************************
                          Typedef for system support
  ******************************************************************************/
 
 /** Iinterrupt Hardware priority type (8 bits on Tricore) */
-typedef uint8_t OSEE_tc_isr_hw_prio;
+typedef uint8_t OE_tc_isr_hw_prio;
 
 /*******************************************************************************
                               Ports Support
@@ -66,52 +66,52 @@ typedef uint8_t OSEE_tc_isr_hw_prio;
 /* Defines to populate Ports registers */
 /**  Input - No input pull device connected, tri-state mode
      (same as 0x03U) */
-#define OSEE_TC_INPUT_TRISTATE         0x00U
+#define OE_TC_INPUT_TRISTATE         0x00U
 /**  Input - Pull-Down device connected */
-#define OSEE_TC_INPUT_PULL_DOWN        0x01U
+#define OE_TC_INPUT_PULL_DOWN        0x01U
 /**  Input - Pull-Up device connected. RESET Default */
-#define OSEE_TC_INPUT_PULL_UP          0x02U
+#define OE_TC_INPUT_PULL_UP          0x02U
 
 /**  Output - Push-pull General-purpose output */
-#define OSEE_TC_OUTPUT_PUSH_PULL_GP    0x10U
+#define OE_TC_OUTPUT_PUSH_PULL_GP    0x10U
 /**  Output - Push-pull Alternate output function 1 */
-#define OSEE_TC_OUTPUT_PUSH_PULL_ALT1  0x11U
+#define OE_TC_OUTPUT_PUSH_PULL_ALT1  0x11U
 /**  Output - Push-pull Alternate output function 2 */
-#define OSEE_TC_OUTPUT_PUSH_PULL_ALT2  0x12U
+#define OE_TC_OUTPUT_PUSH_PULL_ALT2  0x12U
 /**  Output - Push-pull Alternate output function 3 */
-#define OSEE_TC_OUTPUT_PUSH_PULL_ALT3  0x13U
+#define OE_TC_OUTPUT_PUSH_PULL_ALT3  0x13U
 /**  Output - Push-pull Alternate output function 4 */
-#define OSEE_TC_OUTPUT_PUSH_PULL_ALT4  0x14U
+#define OE_TC_OUTPUT_PUSH_PULL_ALT4  0x14U
 /**  Output - Push-pull Alternate output function 5 */
-#define OSEE_TC_OUTPUT_PUSH_PULL_ALT5  0x15U
+#define OE_TC_OUTPUT_PUSH_PULL_ALT5  0x15U
 /**  Output - Push-pull Alternate output function 6 */
-#define OSEE_TC_OUTPUT_PUSH_PULL_ALT6  0x16U
+#define OE_TC_OUTPUT_PUSH_PULL_ALT6  0x16U
 /**  Output - Push-pull Alternate output function 7 */
-#define OSEE_TC_OUTPUT_PUSH_PULL_ALT7  0x17U
+#define OE_TC_OUTPUT_PUSH_PULL_ALT7  0x17U
 
 /**  Output - Open-drain General-purpose output */
-#define OSEE_TC_OUTPUT_OPEN_DRAIN_GP   0x24U
+#define OE_TC_OUTPUT_OPEN_DRAIN_GP   0x24U
 /**  Output - Open-drain Alternate output function 1 */
-#define OSEE_TC_OUTPUT_OPEN_DRAIN_ALT1 0x25U
+#define OE_TC_OUTPUT_OPEN_DRAIN_ALT1 0x25U
 /**  Output - Open-drain Alternate output function 2 */
-#define OSEE_TC_OUTPUT_OPEN_DRAIN_ALT2 0x26U
+#define OE_TC_OUTPUT_OPEN_DRAIN_ALT2 0x26U
 /**  Output - Open-drain Alternate output function 3 */
-#define OSEE_TC_OUTPUT_OPEN_DRAIN_ALT3 0x27U
+#define OE_TC_OUTPUT_OPEN_DRAIN_ALT3 0x27U
 /**  Output - Open-drain Alternate output function 4 */
-#define OSEE_TC_OUTPUT_OPEN_DRAIN_ALT4 0x28U
+#define OE_TC_OUTPUT_OPEN_DRAIN_ALT4 0x28U
 /**  Output - Open-drain Alternate output function 5 */
-#define OSEE_TC_OUTPUT_OPEN_DRAIN_ALT5 0x29U
+#define OE_TC_OUTPUT_OPEN_DRAIN_ALT5 0x29U
 /**  Output - Open-drain Alternate output function 6 */
-#define OSEE_TC_OUTPUT_OPEN_DRAIN_ALT6 0x30U
+#define OE_TC_OUTPUT_OPEN_DRAIN_ALT6 0x30U
 /**  Output - Open-drain Alternate output function 7 */
-#define OSEE_TC_OUTPUT_OPEN_DRAIN_ALT7 0x31U
+#define OE_TC_OUTPUT_OPEN_DRAIN_ALT7 0x31U
 
 /******************************************************************************
                             SCU Watchdogs Handling
  *****************************************************************************/
 
 /** \brief CPU WDT Control Register 0 */
-typedef struct OSEE_tc_SCU_WDTCPU_CON0_bits_tag
+typedef struct OE_tc_SCU_WDTCPU_CON0_bits_tag
 {
 /** \brief [0:0] End-of-Initialization Control Bit (rwh) */
   unsigned int endinit  : 1;
@@ -121,13 +121,13 @@ typedef struct OSEE_tc_SCU_WDTCPU_CON0_bits_tag
   unsigned int pw       : 14;
 /** \brief [31:16] Reload Value for the WDT (also Time Check Value) (rw) */
   unsigned int rel      : 16;
-} OSEE_tc_SCU_WDTCPU_CON0_bits;
+} OE_tc_SCU_WDTCPU_CON0_bits;
 
 /** \brief  Safety WDT Control Register 0 */
-typedef OSEE_tc_SCU_WDTCPU_CON0_bits OSEE_tc_SCU_WDTS_CON0_bits;
+typedef OE_tc_SCU_WDTCPU_CON0_bits OE_tc_SCU_WDTS_CON0_bits;
 
 /** \brief  CPU WDT Control Register 1 */
-typedef struct OSEE_tc_SCU_WDTCPU_CON1_bits_tag
+typedef struct OE_tc_SCU_WDTCPU_CON1_bits_tag
 {
 /** \brief Reserved */
   unsigned int      : 2;
@@ -149,10 +149,10 @@ typedef struct OSEE_tc_SCU_WDTCPU_CON1_bits_tag
   unsigned int tctr : 7;
 /** \brief Reserved */
   unsigned int      : 16;
-} OSEE_tc_SCU_WDTCPU_CON1_bits;
+} OE_tc_SCU_WDTCPU_CON1_bits;
 
 /** \brief  Safety WDT Control Register 1 */
-typedef struct OSEE_tc_SCU_WDTS_CON1_bits_tag
+typedef struct OE_tc_SCU_WDTS_CON1_bits_tag
 {
 /** \brief [0:0] Clear Internal Reset Flag (rwh) */
   unsigned int clrif  : 1;
@@ -176,10 +176,10 @@ typedef struct OSEE_tc_SCU_WDTS_CON1_bits_tag
   unsigned int tctr   : 7;
 /** \brief Reserved */
   unsigned int        : 16;
-} OSEE_tc_SCU_WDTS_CON1_bits;
+} OE_tc_SCU_WDTS_CON1_bits;
 
 /** \brief  CPU WDT Status Register */
-typedef struct OSEE_tc_SCU_WDTCPU_SR_bits_tag
+typedef struct OE_tc_SCU_WDTCPU_SR_bits_tag
 {
 /** \brief [0:0] Watchdog Access Error Status Flag (rh) */
   unsigned int ae   : 1;
@@ -203,138 +203,138 @@ typedef struct OSEE_tc_SCU_WDTCPU_SR_bits_tag
   unsigned int tct  : 7;
 /** \brief [31:16] Timer Value (rh) */
   unsigned int tim  : 16;
-} OSEE_tc_SCU_WDTCPU_SR_bits;
+} OE_tc_SCU_WDTCPU_SR_bits;
 
 /** \brief  Safety WDT Status Register */
-typedef OSEE_tc_SCU_WDTCPU_SR_bits OSEE_tc_SCU_WDTS_SR_bits;
+typedef OE_tc_SCU_WDTCPU_SR_bits OE_tc_SCU_WDTS_SR_bits;
 
 /** \brief  CPU WDT Control Register 0 */
-typedef union OSEE_tc_SCU_WDTCPU_CON0_tag
+typedef union OE_tc_SCU_WDTCPU_CON0_tag
 {
 /** \brief Register access */
-  OSEE_reg                      reg;
+  OE_reg                      reg;
 /** \brief Bitfield access */
-  OSEE_tc_SCU_WDTCPU_CON0_bits  bits;
-} OSEE_tc_SCU_WDTCPU_CON0;
+  OE_tc_SCU_WDTCPU_CON0_bits  bits;
+} OE_tc_SCU_WDTCPU_CON0;
 
 /** \\brief  CPU WDT Control Register 1 */
-typedef union OSEE_tc_SCU_WDTCPU_CON1_tag
+typedef union OE_tc_SCU_WDTCPU_CON1_tag
 {
 /** \brief  Register access */
-  OSEE_reg                      reg;
+  OE_reg                      reg;
 /** \brief  Bitfield access */
-  OSEE_tc_SCU_WDTCPU_CON1_bits  bits;
-} OSEE_tc_SCU_WDTCPU_CON1;
+  OE_tc_SCU_WDTCPU_CON1_bits  bits;
+} OE_tc_SCU_WDTCPU_CON1;
 
 /** \brief  CPU WDT Status Register */
-typedef union OSEE_tc_SCU_WDTCPU_SR_tag
+typedef union OE_tc_SCU_WDTCPU_SR_tag
 {
 /** \brief  Register access */
-  OSEE_reg                    reg;
+  OE_reg                    reg;
 /** \brief  Bitfield access */
-  OSEE_tc_SCU_WDTCPU_SR_bits  bits;
-} OSEE_tc_SCU_WDTCPU_SR;
+  OE_tc_SCU_WDTCPU_SR_bits  bits;
+} OE_tc_SCU_WDTCPU_SR;
 
 /** \brief  Safety WDT Control Register 0 */
-typedef union OSEE_tc_SCU_WDTS_CON0_tag
+typedef union OE_tc_SCU_WDTS_CON0_tag
 {
 /** \brief  Register access */
-  OSEE_reg                    reg;
+  OE_reg                    reg;
 /** \brief  Bitfield access */
-  OSEE_tc_SCU_WDTS_CON0_bits  bits;
-} OSEE_tc_SCU_WDTS_CON0;
+  OE_tc_SCU_WDTS_CON0_bits  bits;
+} OE_tc_SCU_WDTS_CON0;
 
 /** \brief  Safety WDT Control Register 1 */
-typedef union OSEE_tc_SCU_WDTS_CON1_tag
+typedef union OE_tc_SCU_WDTS_CON1_tag
 {
 /** \brief  Register access */
-  OSEE_reg                    reg;
+  OE_reg                    reg;
 /** \brief  Bitfield access */
-  OSEE_tc_SCU_WDTS_CON1_bits  bits;
-} OSEE_tc_SCU_WDTS_CON1;
+  OE_tc_SCU_WDTS_CON1_bits  bits;
+} OE_tc_SCU_WDTS_CON1;
 
 /** \brief  Safety WDT Status Register */
-typedef union OSEE_tc_SCU_WDTS_SR_tag
+typedef union OE_tc_SCU_WDTS_SR_tag
 {
 /** \brief  Register access */
-  OSEE_reg                  reg;
+  OE_reg                  reg;
 /** \brief  Bitfield access */
-  OSEE_tc_SCU_WDTS_SR_bits  bits;
-} OSEE_tc_SCU_WDTS_SR;
+  OE_tc_SCU_WDTS_SR_bits  bits;
+} OE_tc_SCU_WDTS_SR;
 
 /** \brief  CPU watchdog */
-typedef struct OSEE_tc_SCU_WDTCPU_tag
+typedef struct OE_tc_SCU_WDTCPU_tag
 {
 /** \brief  CPU WDT Control Register 0, offset 0 */
-  OSEE_tc_SCU_WDTCPU_CON0 con0;
+  OE_tc_SCU_WDTCPU_CON0 con0;
 /** \brief  CPU WDT Control Register 1, offset 4 */
-  OSEE_tc_SCU_WDTCPU_CON1 con1;
+  OE_tc_SCU_WDTCPU_CON1 con1;
 /** \brief  CPU WDT Status Register, offset 8 */
-  OSEE_tc_SCU_WDTCPU_SR   sr;
-} OSEE_tc_SCU_WDTCPU;
+  OE_tc_SCU_WDTCPU_SR   sr;
+} OE_tc_SCU_WDTCPU;
 
 /** \brief  Safety watchdog */
-typedef struct OSEE_tc_SCU_WDTS_tag
+typedef struct OE_tc_SCU_WDTS_tag
 {
 /** \brief  Safety WDT Control Register 0, offset 0 */
-  OSEE_tc_SCU_WDTS_CON0 con0;
+  OE_tc_SCU_WDTS_CON0 con0;
 /** \brief  Safety WDT Control Register 1, offset 4 */
-  OSEE_tc_SCU_WDTS_CON1 con1;
+  OE_tc_SCU_WDTS_CON1 con1;
 /** \brief  Safety WDT Status Register, offset 8 */
-  OSEE_tc_SCU_WDTS_SR   sr;
-} OSEE_tc_SCU_WDTS;
+  OE_tc_SCU_WDTS_SR   sr;
+} OE_tc_SCU_WDTS;
 
 /** \brief Base address of SCU module */
-#define OSEE_TC_SCU_BASE_ADDRESS  (0xF0036000U)
-#if (!defined(OSEE_TC_2G))
+#define OE_TC_SCU_BASE_ADDRESS  (0xF0036000U)
+#if (!defined(OE_TC_2G))
 /** \brief Numer of CPU Watchdogs */
-#define OSEE_TC_SCU_WDTCPU_NUM    (3U)
+#define OE_TC_SCU_WDTCPU_NUM    (3U)
 /** \brief Safety Watchdog offset in SCU module */
-#define OSEE_TC_SCU_WDTS_OFFSET   (0x000000F0U)
+#define OE_TC_SCU_WDTS_OFFSET   (0x000000F0U)
 /** \brief CPU Watchdogs offset in SCU module */
-#define OSEE_TC_SCU_WDTCPU_OFFSET (0x00000100U)
+#define OE_TC_SCU_WDTCPU_OFFSET (0x00000100U)
 #else
-#define OSEE_TC_SCU_WDTCPU_NUM    (6U)
+#define OE_TC_SCU_WDTCPU_NUM    (6U)
 /** \brief Safety Watchdog offset in SCU module */
-#define OSEE_TC_SCU_WDTS_OFFSET   (0x000002A8U)
+#define OE_TC_SCU_WDTS_OFFSET   (0x000002A8U)
 /** \brief CPU Watchdogs offset in SCU module */
-#define OSEE_TC_SCU_WDTCPU_OFFSET (0x0000024CU)
-#endif /* !OSEE_TC_2G */
+#define OE_TC_SCU_WDTCPU_OFFSET (0x0000024CU)
+#endif /* !OE_TC_2G */
 
 /** \brief SCU Safety Watchdog Access Macro */
-#define OSEE_TC_SCU_WDTS\
-  (*((OSEE_tc_SCU_WDTS volatile *)\
-      (OSEE_TC_SCU_BASE_ADDRESS + OSEE_TC_SCU_WDTS_OFFSET)\
+#define OE_TC_SCU_WDTS\
+  (*((OE_tc_SCU_WDTS volatile *)\
+      (OE_TC_SCU_BASE_ADDRESS + OE_TC_SCU_WDTS_OFFSET)\
     )\
   )
 
 /** \brief SCU CPU Watchdogs Access Macro */
-#define OSEE_TC_SCU_WDTCPU\
-  (*((OSEE_tc_SCU_WDTCPU volatile (*)[OSEE_TC_SCU_WDTCPU_NUM])\
-      (OSEE_TC_SCU_BASE_ADDRESS + OSEE_TC_SCU_WDTCPU_OFFSET)\
+#define OE_TC_SCU_WDTCPU\
+  (*((OE_tc_SCU_WDTCPU volatile (*)[OE_TC_SCU_WDTCPU_NUM])\
+      (OE_TC_SCU_BASE_ADDRESS + OE_TC_SCU_WDTCPU_OFFSET)\
     )\
   )
 
 /** Reads the whatchdog password from CON0 register */
-OSEE_STATIC_INLINE uint16_t OSEE_ALWAYS_INLINE
-  OSEE_tc_get_cpu_wdt_pw(OSEE_reg core_index)
+OE_STATIC_INLINE uint16_t OE_ALWAYS_INLINE
+  OE_tc_get_cpu_wdt_pw(OE_reg core_index)
 {
   /* Read Password from CON0 register
    * !!! NOTE: !!! when read bottom six bit of password are inverted so we have
    * to toggle them before returning password */
-  uint16_t pw = OSEE_TC_SCU_WDTCPU[core_index].con0.bits.pw;
+  uint16_t pw = OE_TC_SCU_WDTCPU[core_index].con0.bits.pw;
   uint16_t pw_toggled = pw ^ ((uint16_t)0x003FU);
   return (uint16_t)pw_toggled;
 }
 
 /** Reads the safety whatchdog password from CON0 register */
-OSEE_STATIC_INLINE uint16_t OSEE_ALWAYS_INLINE
-  OSEE_tc_get_safety_wdt_pw(void)
+OE_STATIC_INLINE uint16_t OE_ALWAYS_INLINE
+  OE_tc_get_safety_wdt_pw(void)
 {
   /* Read Password from CON0 register
    * !!! NOTE: !!! when read bottom six bit of password are inverted so we have
    * to toggle them before returning password */
-  uint16_t pw = OSEE_TC_SCU_WDTS.con0.bits.pw;
+  uint16_t pw = OE_TC_SCU_WDTS.con0.bits.pw;
   uint16_t pw_toggled = pw ^ ((uint16_t)0x003FU);
   return (uint16_t)pw_toggled;
 }
@@ -345,13 +345,13 @@ OSEE_STATIC_INLINE uint16_t OSEE_ALWAYS_INLINE
  *  \param [in] core_index The watchdog core id
  *  \param [in] pw the password to unlock the lock
  */
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
- OSEE_tc_clear_cpu_endinit(OSEE_reg core_index, uint16_t pw)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+ OE_tc_clear_cpu_endinit(OE_reg core_index, uint16_t pw)
 {
-  OSEE_tc_SCU_WDTCPU_CON0 cpu_wdt_con0;
+  OE_tc_SCU_WDTCPU_CON0 cpu_wdt_con0;
 /* Prepare a "reference" to the CPU watchdog */
-  OSEE_tc_SCU_WDTCPU volatile * const
-    p_cpu_wdt = &OSEE_TC_SCU_WDTCPU[core_index];
+  OE_tc_SCU_WDTCPU volatile * const
+    p_cpu_wdt = &OE_TC_SCU_WDTCPU[core_index];
 
 /* Read Config_0 register */
   cpu_wdt_con0.reg = p_cpu_wdt->con0.reg;
@@ -384,13 +384,13 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
  *  \param [in] core_index The watchdog core id
  *  \param [in] pw the password to unlock the lock
  */
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
-  OSEE_tc_set_cpu_endinit(OSEE_reg core_index, uint16_t pw)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+  OE_tc_set_cpu_endinit(OE_reg core_index, uint16_t pw)
 {
-  OSEE_tc_SCU_WDTCPU_CON0 cpu_wdt_con0;
+  OE_tc_SCU_WDTCPU_CON0 cpu_wdt_con0;
 /* Prepare a "reference" to the CPU watchdog */
-  OSEE_tc_SCU_WDTCPU volatile * const
-    p_cpu_wdt = &OSEE_TC_SCU_WDTCPU[core_index];
+  OE_tc_SCU_WDTCPU volatile * const
+    p_cpu_wdt = &OE_TC_SCU_WDTCPU[core_index];
 
 /* Read Config_0 register */
   cpu_wdt_con0.reg = p_cpu_wdt->con0.reg;
@@ -425,23 +425,23 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
  *  \param [in] core_index Description for core_index
  *  \param [in] pw Description for pw
  */
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
-  OSEE_tc_disable_cpu_wdt(OSEE_reg core_index, uint16_t pw)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+  OE_tc_disable_cpu_wdt(OE_reg core_index, uint16_t pw)
 {
-  OSEE_tc_clear_cpu_endinit(core_index, pw);
+  OE_tc_clear_cpu_endinit(core_index, pw);
 /* Set "Disable Request bit" on CPU_WDT[core_index].CON1 */
-  OSEE_TC_SCU_WDTCPU[core_index].con1.bits.dr = 1U;
-  OSEE_tc_set_cpu_endinit(core_index, pw);
+  OE_TC_SCU_WDTCPU[core_index].con1.bits.dr = 1U;
+  OE_tc_set_cpu_endinit(core_index, pw);
 }
 
 #if 0
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
-  OSEE_tc_enable_cpu_wdt(OSEE_reg core_index, uint16_t pw)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+  OE_tc_enable_cpu_wdt(OE_reg core_index, uint16_t pw)
 {
-  OSEE_tc_clear_cpu_endinit(core_index, pw);
+  OE_tc_clear_cpu_endinit(core_index, pw);
 /* Reset "Disable Request bit" on CPU_WDT[core_index].CON1 */
-  OSEE_TC_SCU_WDTCPU[core_index].con1.bits.dr = 0U;
-  OSEE_tc_set_cpu_endinit(core_index, pw);
+  OE_TC_SCU_WDTCPU[core_index].con1.bits.dr = 0U;
+  OE_tc_set_cpu_endinit(core_index, pw);
 }
 #endif
 
@@ -451,13 +451,13 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
  *  \param [in] pw the password to unlock the lock
  */
 
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
-  OSEE_tc_clear_safety_endinit(uint16_t pw)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+  OE_tc_clear_safety_endinit(uint16_t pw)
 {
 /* Read Config_0 register */
-  OSEE_tc_SCU_WDTS_CON0 safety_wdt_con0;
+  OE_tc_SCU_WDTS_CON0 safety_wdt_con0;
 
-  safety_wdt_con0.reg = OSEE_TC_SCU_WDTS.con0.reg;
+  safety_wdt_con0.reg = OE_TC_SCU_WDTS.con0.reg;
 
 /* If locked unlock it */
   if (safety_wdt_con0.bits.lck != 0U) {
@@ -467,16 +467,16 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
     safety_wdt_con0.bits.pw      = pw;
 
 /* Password ready. Store it to WDT_CON0 to unprotect the register */
-    OSEE_TC_SCU_WDTS.con0.reg = safety_wdt_con0.reg;
+    OE_TC_SCU_WDTS.con0.reg = safety_wdt_con0.reg;
   }
 
 /* Clear ENDINT and set LCK bit in Config_0 register */
   safety_wdt_con0.bits.endinit = 0U;
   safety_wdt_con0.bits.lck     = 1U;
-  OSEE_TC_SCU_WDTS.con0.reg    = safety_wdt_con0.reg;
+  OE_TC_SCU_WDTS.con0.reg    = safety_wdt_con0.reg;
 
 /* Read back ENDINIT and wait until it has been cleared */
-  while (OSEE_TC_SCU_WDTS.con0.bits.endinit == 1U) {
+  while (OE_TC_SCU_WDTS.con0.bits.endinit == 1U) {
     ;
   }
 }
@@ -487,13 +487,13 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
  *  
  *  \param [in] pw the password to unlock the lock
  */
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
-  OSEE_tc_set_safety_endinit(uint16_t pw)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+  OE_tc_set_safety_endinit(uint16_t pw)
 {
 /* Read Config_0 register */
-  OSEE_tc_SCU_WDTS_CON0 safety_wdt_con0;
+  OE_tc_SCU_WDTS_CON0 safety_wdt_con0;
 
-  safety_wdt_con0.reg = OSEE_TC_SCU_WDTS.con0.reg;
+  safety_wdt_con0.reg = OE_TC_SCU_WDTS.con0.reg;
 
 /* If locked unlock it */
   if (safety_wdt_con0.bits.lck != 0U) {
@@ -503,17 +503,17 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
     safety_wdt_con0.bits.pw      = pw;
 
 /* Password ready. Store it to WDT_CON0 to unprotect the register */
-    OSEE_TC_SCU_WDTS.con0.reg = safety_wdt_con0.reg;
+    OE_TC_SCU_WDTS.con0.reg = safety_wdt_con0.reg;
   }
 
 
 /* Set ENDINT and set LCK bit in Config_0 register */
   safety_wdt_con0.bits.endinit = 1U;
   safety_wdt_con0.bits.lck     = 1U;
-  OSEE_TC_SCU_WDTS.con0.reg   = safety_wdt_con0.reg;
+  OE_TC_SCU_WDTS.con0.reg   = safety_wdt_con0.reg;
 
 /* Read back ENDINIT and wait until it has been cleared */
-  while (OSEE_TC_SCU_WDTS.con0.bits.endinit == 0U) {
+  while (OE_TC_SCU_WDTS.con0.bits.endinit == 0U) {
     ;
   }
 }
@@ -525,23 +525,23 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
  *  
  *  \param [in] pw Description for pw
  */
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
-  OSEE_tc_disable_safety_wdt(uint16_t pw)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+  OE_tc_disable_safety_wdt(uint16_t pw)
 {
-  OSEE_tc_clear_safety_endinit(pw);
+  OE_tc_clear_safety_endinit(pw);
 /* Set "Disable Request bit" on CPU_WDTS.CON1 */
-  OSEE_TC_SCU_WDTS.con1.bits.dr = 1U;
-  OSEE_tc_set_safety_endinit(pw);
+  OE_TC_SCU_WDTS.con1.bits.dr = 1U;
+  OE_tc_set_safety_endinit(pw);
 }
 
 #if 0
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
-  OSEE_tc_enable_safety_wdt(uint16_t pw)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+  OE_tc_enable_safety_wdt(uint16_t pw)
 {
-  OSEE_tc_clear_safety_endinit(pw);
+  OE_tc_clear_safety_endinit(pw);
 /* Reset "Disable Request bit" on CPU_WDTS.CON1 */
-  OSEE_TC_SCU_WDTS.con1.bits.dr = 0U;
-  OSEE_tc_set_safety_endinit(pw);
+  OE_TC_SCU_WDTS.con1.bits.dr = 0U;
+  OE_tc_set_safety_endinit(pw);
 }
 #endif
 
@@ -554,33 +554,33 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
  *  
  *  \param [in] enable Flag to enable/disable the program cache
  */
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE OSEE_tc_set_pcache(OSEE_bool enable)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE OE_tc_set_pcache(OE_bool enable)
 {
   uint16_t cpu_wdt_pw;
-  OSEE_core_id  const core_id = OSEE_get_curr_core_id();
-#if (defined(OSEE_CORE_ID_VALID_MASK)) && (OSEE_CORE_ID_VALID_MASK & 0x40U)
-  OSEE_reg      const core_index = (core_id != OS_CORE_ID_6)?
-    (OSEE_reg)core_id: 5U;
+  OE_core_id  const core_id = OE_get_curr_core_id();
+#if (defined(OE_CORE_ID_VALID_MASK)) && (OE_CORE_ID_VALID_MASK & 0x40U)
+  OE_reg      const core_index = (core_id != OS_CORE_ID_6)?
+    (OE_reg)core_id: 5U;
 #else
-  OSEE_reg      const core_index = (OSEE_reg)core_id;
+  OE_reg      const core_index = (OE_reg)core_id;
 #endif
 /* PCON0[1:1](.PCBYP mask) Program Cache Bypass (rw).
    PCBYP is the only not reserved bit in PCON0. */
-  OSEE_reg const pcon0 = (enable)? 0x0U: 0x2U;
+  OE_reg const pcon0 = (enable)? 0x0U: 0x2U;
   if (enable) {
     /* Step 1: Initiate invalidation of current pcache contents if any.
        (i.e. PCON1[0:0](.PCINV) = 1 Program Cache Invalidate */
-    OSEE_tc_set_csfr(OSEE_CSFR_PCON1, 0x1U);
+    OE_tc_set_csfr(OE_CSFR_PCON1, 0x1U);
   }
 
 /* CPU WDT Password */
-  cpu_wdt_pw = OSEE_tc_get_cpu_wdt_pw(core_index);
+  cpu_wdt_pw = OE_tc_get_cpu_wdt_pw(core_index);
 
 /* PCACHE enable steps */
 /* Step 2: Set PCBYP to 0 if cache is enabled */
-  OSEE_tc_clear_cpu_endinit(core_index, cpu_wdt_pw);
-  OSEE_tc_set_csfr(OSEE_CSFR_PCON0, pcon0);
-  OSEE_tc_set_cpu_endinit(core_index, cpu_wdt_pw);
+  OE_tc_clear_cpu_endinit(core_index, cpu_wdt_pw);
+  OE_tc_set_csfr(OE_CSFR_PCON0, pcon0);
+  OE_tc_set_cpu_endinit(core_index, cpu_wdt_pw);
 }
 
 /**
@@ -588,30 +588,30 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE OSEE_tc_set_pcache(OSEE_bool enable)
  *  
  *  \param [in] enable Flag to enable/disable the data cache
  */
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE OSEE_tc_set_dcache(OSEE_bool enable)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE OE_tc_set_dcache(OE_bool enable)
 {
   uint16_t cpu_wdt_pw;
-  OSEE_core_id  const core_id = OSEE_get_curr_core_id();
-#if (defined(OSEE_CORE_ID_VALID_MASK)) && (OSEE_CORE_ID_VALID_MASK & 0x40U)
-  OSEE_reg      const core_index = (core_id != OS_CORE_ID_6)?
-    (OSEE_reg)core_id: 5U;
+  OE_core_id  const core_id = OE_get_curr_core_id();
+#if (defined(OE_CORE_ID_VALID_MASK)) && (OE_CORE_ID_VALID_MASK & 0x40U)
+  OE_reg      const core_index = (core_id != OS_CORE_ID_6)?
+    (OE_reg)core_id: 5U;
 #else
-  OSEE_reg      const core_index = (OSEE_reg)core_id;
+  OE_reg      const core_index = (OE_reg)core_id;
 #endif
 
 
 /* DCON0[1:1](.DCBYP mask) Data Cache Bypass (rw).
    DCBYP is the only not reserved bit in DCON0. */
-  OSEE_reg const dcon0 = (enable)? 0x0U: 0x2U;
+  OE_reg const dcon0 = (enable)? 0x0U: 0x2U;
 
 /* CPU WDT Password */
-  cpu_wdt_pw = OSEE_tc_get_cpu_wdt_pw(core_index);
+  cpu_wdt_pw = OE_tc_get_cpu_wdt_pw(core_index);
 
 /* DCACHE enable steps */
 /* Step 2: Set DCBYP to 0 if cache is enabled */
-  OSEE_tc_clear_cpu_endinit(core_index, cpu_wdt_pw);
-  OSEE_tc_set_csfr(OSEE_CSFR_DCON0, dcon0);
-  OSEE_tc_set_cpu_endinit(core_index, cpu_wdt_pw);
+  OE_tc_clear_cpu_endinit(core_index, cpu_wdt_pw);
+  OE_tc_set_csfr(OE_CSFR_DCON0, dcon0);
+  OE_tc_set_cpu_endinit(core_index, cpu_wdt_pw);
 }
 
 /**
@@ -623,22 +623,22 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE OSEE_tc_set_dcache(OSEE_bool enable)
  *
  */
 
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
-  OSEE_tc_csa_init_inline
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+  OE_tc_csa_init_inline
 (
-  OSEE_csa       * const p_csa_begin,
-  OSEE_csa const * const p_csa_end
+  OE_csa       * const p_csa_begin,
+  OE_csa const * const p_csa_end
 )
 {
 /* Nr of CSAs in area. Best solution, even though is a MISRA deviation, since
-   pointers subtraction handles OSEE_csa size and p_csa_end/p_csa_begin
+   pointers subtraction handles OE_csa size and p_csa_end/p_csa_begin
    are the extremes of an array constructed in linker script
    (condition under where C language specification allows pointer subtraction).
  */
   size_t const no_of_csas = (size_t)(p_csa_end - p_csa_begin);
 
 /* Previous Context Pointer (CSA Link Word) */
-  OSEE_reg pcxi_val = 0U;
+  OE_reg pcxi_val = 0U;
 /*
   This variable hold the number of CSA that I have to leave free to
   handle FCD trap.
@@ -648,7 +648,7 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
   call TNI switch routine that call TNI sub-handler.
   TODO: Give the possibility to configure this parameter.
 */
-  OSEE_reg fcd_needed_csa = 6U;
+  OE_reg fcd_needed_csa = 6U;
 /* Cycle Index */
   size_t i;
 
@@ -659,18 +659,18 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
  */
   for (i = no_of_csas; i > 0U; --i) {
 /* CSA PCXI segment */
-    OSEE_reg   pcxi_s;
+    OE_reg   pcxi_s;
 /* CSA PCXI offset */
-    OSEE_reg   pcxi_o;
+    OE_reg   pcxi_o;
 /* Get current CSA pointer */
-    OSEE_csa * const p_csa = &p_csa_begin[(i - 1U)];
+    OE_csa * const p_csa = &p_csa_begin[(i - 1U)];
 
 /* Store in current CSA previous pointer (null in last CSA. i.e. First time!) */
     p_csa->l_next.reg = pcxi_val;
 /* Current CSA segment */
-    pcxi_s  = (((OSEE_reg)p_csa >> 28U) & 0xFU) << 16U;
+    pcxi_s  = (((OE_reg)p_csa >> 28U) & 0xFU) << 16U;
 /* Evaluate CSA Segment Offset */
-    pcxi_o  = (((OSEE_reg)p_csa >> 6U) & 0xFFFFU);
+    pcxi_o  = (((OE_reg)p_csa >> 6U) & 0xFFFFU);
 /* Compose pcxi_s and pcxi_o in the pcxi_val to be stored in next CSA */
     pcxi_val = pcxi_s | pcxi_o;
 
@@ -680,11 +680,11 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
     if (fcd_needed_csa == 0U) {
 /* After having stored the LCX, I would have to have a 32 bit wrap around to
    override the previous value and in a 32-bit address space is not possible. */
-      OSEE_tc_set_csfr(OSEE_CSFR_LCX, pcxi_val);
+      OE_tc_set_csfr(OE_CSFR_LCX, pcxi_val);
     }
   }
 /* Initialize the HEAD of Free Context List */
-  OSEE_tc_set_csfr(OSEE_CSFR_FCX, pcxi_val);
+  OE_tc_set_csfr(OE_CSFR_FCX, pcxi_val);
 }
 
 /******************************************************************************
@@ -692,87 +692,87 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
  *****************************************************************************/
 
 /** System Timer base address */
-#if (!defined(OSEE_TC_2G))
-#define OSEE_TC_STM_BASE        (0xF0000000U)
-#define OSEE_TC_STM_ID_MASK     (0x3U)
+#if (!defined(OE_TC_2G))
+#define OE_TC_STM_BASE        (0xF0000000U)
+#define OE_TC_STM_ID_MASK     (0x3U)
 #else
-#define OSEE_TC_STM_BASE        (0xF0001000U)
-#define OSEE_TC_STM_ID_MASK     (0x7U)
-#endif /* !OSEE_TC_2G */
+#define OE_TC_STM_BASE        (0xF0001000U)
+#define OE_TC_STM_ID_MASK     (0x7U)
+#endif /* !OE_TC_2G */
 
 /** per-core offset to reach the STM registers */
-#define OSEE_TC_STM_CORE_OFFSET(c)\
-  (((((OSEE_reg)(c))) & OSEE_TC_STM_ID_MASK) * 0x100U)
+#define OE_TC_STM_CORE_OFFSET(c)\
+  (((((OE_reg)(c))) & OE_TC_STM_ID_MASK) * 0x100U)
 
 /** access to a register on a specific core of the STM- */
-#define OSEE_TC_STM_ADDR(c, regoffset)\
-  (OSEE_TC_STM_BASE + OSEE_TC_STM_CORE_OFFSET(c) + ((regoffset) & 0xFFU))
+#define OE_TC_STM_ADDR(c, regoffset)\
+  (OE_TC_STM_BASE + OE_TC_STM_CORE_OFFSET(c) + ((regoffset) & 0xFFU))
 
 /** a macro to operate on STM registers on a specific core */
-#define OSEE_TC_STM_REG(c, regoffset)\
-  (*(OSEE_reg volatile *)OSEE_TC_STM_ADDR(c, regoffset))
+#define OE_TC_STM_REG(c, regoffset)\
+  (*(OE_reg volatile *)OE_TC_STM_ADDR(c, regoffset))
 
 /** offset in the interrupt router of the STM */
-#if (!defined(OSEE_TC_2G))
-#define OSEE_TC_SRC_STM_OFF         (0x0490U)
+#if (!defined(OE_TC_2G))
+#define OE_TC_SRC_STM_OFF         (0x0490U)
 #else
-#define OSEE_TC_SRC_STM_OFF         (0x0300U)
-#endif /* !OSEE_TC_2G */
+#define OE_TC_SRC_STM_OFF         (0x0300U)
+#endif /* !OE_TC_2G */
 
 /** address to a specific register of the STM in the interrupt router */
-#define OSEE_TC_STM_SRC_OFFSET(c, sr)\
-  (OSEE_TC_SRC_STM_OFF +\
-    ((((OSEE_reg)(c)) & OSEE_TC_STM_ID_MASK) * 8U) + (((sr) & 0x1U) * 4U))
+#define OE_TC_STM_SRC_OFFSET(c, sr)\
+  (OE_TC_SRC_STM_OFF +\
+    ((((OE_reg)(c)) & OE_TC_STM_ID_MASK) * 8U) + (((sr) & 0x1U) * 4U))
 
 /** \brief Clock Control Register */
-#define OSEE_TC_STM_CLC_OFF     (0x00U)
+#define OE_TC_STM_CLC_OFF     (0x00U)
 /** \brief Module Identification Register */
-#define OSEE_TC_STM_ID_OFF      (0x08U)
+#define OE_TC_STM_ID_OFF      (0x08U)
 /** \brief Timer Register 0 */
-#define OSEE_TC_STM_TIM0_OFF    (0x10U)
+#define OE_TC_STM_TIM0_OFF    (0x10U)
 /** \brief Timer Register 1 */
-#define OSEE_TC_STM_TIM1_OFF    (0x14U)
+#define OE_TC_STM_TIM1_OFF    (0x14U)
 /** \brief Timer Register 2 */
-#define OSEE_TC_STM_TIM2_OFF    (0x18U)
+#define OE_TC_STM_TIM2_OFF    (0x18U)
 /** \brief Timer Register 3 */
-#define OSEE_TC_STM_TIM3_OFF    (0x1CU)
+#define OE_TC_STM_TIM3_OFF    (0x1CU)
 /** \brief Timer Register 4 */
-#define OSEE_TC_STM_TIM4_OFF    (0x20U)
+#define OE_TC_STM_TIM4_OFF    (0x20U)
 /** \brief Timer Register 5 */
-#define OSEE_TC_STM_TIM5_OFF    (0x24U)
+#define OE_TC_STM_TIM5_OFF    (0x24U)
 /** \brief Timer Register 6 */
-#define OSEE_TC_STM_TIM6_OFF    (0x28U)
+#define OE_TC_STM_TIM6_OFF    (0x28U)
 /** \brief Timer Capture Register */
-#define OSEE_TC_STM_CAP_OFF     (0x2CU)
+#define OE_TC_STM_CAP_OFF     (0x2CU)
 /** \brief Compare Register 0 */
-#define OSEE_TC_STM_CMP0_OFF    (0x30U)
+#define OE_TC_STM_CMP0_OFF    (0x30U)
 /** \brief Compare Register 1 */
-#define OSEE_TC_STM_CMP1_OFF    (0x34U)
+#define OE_TC_STM_CMP1_OFF    (0x34U)
 /** \brief Compare Match Control Register */
-#define OSEE_TC_STM_CMCON_OFF   (0x38U)
+#define OE_TC_STM_CMCON_OFF   (0x38U)
 /** \brief Interrupt Control Register */
-#define OSEE_TC_STM_ICR_OFF     (0x3CU)
+#define OE_TC_STM_ICR_OFF     (0x3CU)
 /** \brief Interrupt Set/Clear Register */
-#define OSEE_TC_STM_ISCR_OFF    (0x40U)
+#define OE_TC_STM_ISCR_OFF    (0x40U)
 /** \brief Timer Register 0 Second View */
-#define OSEE_TC_STM_TIM0SV_OFF  (0x50U)
+#define OE_TC_STM_TIM0SV_OFF  (0x50U)
 /** \brief Timer Capture Register Second View */
-#define OSEE_TC_STM_CAPSV_OFF   (0x54U)
+#define OE_TC_STM_CAPSV_OFF   (0x54U)
 /** \brief OCDS Control and Status */
-#define OSEE_TC_STM_OCS_OFF     (0xE8U)
+#define OE_TC_STM_OCS_OFF     (0xE8U)
 /** \brief Kernel Reset Status Clear Register */
-#define OSEE_TC_STM_KRSTCLR_OFF (0xECU)
+#define OE_TC_STM_KRSTCLR_OFF (0xECU)
 /** \brief Kernel Reset Register 1 */
-#define OSEE_TC_STM_KRST1_OFF   (0xF0U)
+#define OE_TC_STM_KRST1_OFF   (0xF0U)
 /** \brief Kernel Reset Register 0 */
-#define OSEE_TC_STM_KRST0_OFF   (0xF4U)
+#define OE_TC_STM_KRST0_OFF   (0xF4U)
 /** \brief Access Enable Register 1 */
-#define OSEE_TC_STM_ACCEN1_OFF  (0xF8U)
+#define OE_TC_STM_ACCEN1_OFF  (0xF8U)
 /** \brief Access Enable Register 0 */
-#define OSEE_TC_STM_ACCEN0_OFF  (0xFCU)
+#define OE_TC_STM_ACCEN0_OFF  (0xFCU)
 
 /** \brief  Compare Match Control Register */
-typedef struct OSEE_tc_STM_CMCON_bits_tag
+typedef struct OE_tc_STM_CMCON_bits_tag
 {
 /** \brief [4:0] Compare Register Size for CMP0 (rw) */
   unsigned int msize0   : 5;
@@ -790,13 +790,13 @@ typedef struct OSEE_tc_STM_CMCON_bits_tag
   unsigned int mstart1  : 5;
 /** \brief Reserved */
   unsigned int          : 3;
-} OSEE_tc_STM_CMCON_bits;
+} OE_tc_STM_CMCON_bits;
 
 /** CMCON register of the STM Timer */
-typedef union OSEE_tc_STM_CMCON_tag {
-  OSEE_reg                reg;   /**< the whole register */
-  OSEE_tc_STM_CMCON_bits  bits;  /**< the bits of the CMCON register */
-} OSEE_tc_STM_CMCON;
+typedef union OE_tc_STM_CMCON_tag {
+  OE_reg                reg;   /**< the whole register */
+  OE_tc_STM_CMCON_bits  bits;  /**< the bits of the CMCON register */
+} OE_tc_STM_CMCON;
 
 /** \brief Macro to access the CMCON register of the STM of core c
  *  
@@ -804,13 +804,13 @@ typedef union OSEE_tc_STM_CMCON_tag {
  *  
  *  \param [in] c the target core where you want to read the CMCON register
  */
-#define OSEE_TC_STM_CMCON(c)\
-  (*(OSEE_tc_STM_CMCON volatile *)\
-    OSEE_TC_STM_ADDR(c, OSEE_TC_STM_CMCON_OFF)\
+#define OE_TC_STM_CMCON(c)\
+  (*(OE_tc_STM_CMCON volatile *)\
+    OE_TC_STM_ADDR(c, OE_TC_STM_CMCON_OFF)\
   )
 
 /** \\brief  Interrupt Control Register */
-typedef struct OSEE_tc_STM_ICR_bits_tag
+typedef struct OE_tc_STM_ICR_bits_tag
 {
 /** \brief [0:0] Compare Register CMP0 Interrupt Enable Control (rw) */
   unsigned int cmp0en : 1;
@@ -828,13 +828,13 @@ typedef struct OSEE_tc_STM_ICR_bits_tag
   unsigned int cmp1os : 1;
 /** \brief Reserved */
   unsigned int        : 25;
-} OSEE_tc_STM_ICR_bits;
+} OE_tc_STM_ICR_bits;
 
 /** ICR register of the STM timer */
-typedef union OSEE_tc_STM_ICR_tag {
-  OSEE_reg                reg;   /**< the whole register */
-  OSEE_tc_STM_ICR_bits  bits;    /**< the bits of the ICR register */
-} OSEE_tc_STM_ICR;
+typedef union OE_tc_STM_ICR_tag {
+  OE_reg                reg;   /**< the whole register */
+  OE_tc_STM_ICR_bits  bits;    /**< the bits of the ICR register */
+} OE_tc_STM_ICR;
 
 /** \brief Macro to access the ICR register of the STM of core c
  *  
@@ -842,9 +842,9 @@ typedef union OSEE_tc_STM_ICR_tag {
  *  
  *  \param [in] c the target core where you want to read the ICR register
  */
-#define OSEE_TC_STM_ICR(c)\
-  (*(OSEE_tc_STM_ICR volatile *)\
-    OSEE_TC_STM_ADDR(c, OSEE_TC_STM_ICR_OFF)\
+#define OE_TC_STM_ICR(c)\
+  (*(OE_tc_STM_ICR volatile *)\
+    OE_TC_STM_ADDR(c, OE_TC_STM_ICR_OFF)\
   )
 
 /**
@@ -855,10 +855,10 @@ typedef union OSEE_tc_STM_ICR_tag {
  *  \param [in] stm_id The timer ID to read
  *  \return The timer lower word value read.
  */
-OSEE_STATIC_INLINE OSEE_reg OSEE_ALWAYS_INLINE
-  OSEE_tc_stm_get_time_lower_word(OSEE_reg stm_id)
+OE_STATIC_INLINE OE_reg OE_ALWAYS_INLINE
+  OE_tc_stm_get_time_lower_word(OE_reg stm_id)
 {
-  return OSEE_TC_STM_REG(stm_id, OSEE_TC_STM_TIM0_OFF);
+  return OE_TC_STM_REG(stm_id, OE_TC_STM_TIM0_OFF);
 }
 
 /**
@@ -869,31 +869,31 @@ OSEE_STATIC_INLINE OSEE_reg OSEE_ALWAYS_INLINE
  *  \param [in] stm_id The timer ID to read
  *  \return The timer upper word value read.
  */
-OSEE_STATIC_INLINE OSEE_reg OSEE_ALWAYS_INLINE
-  OSEE_tc_stm_get_time_upper_word(OSEE_reg stm_id)
+OE_STATIC_INLINE OE_reg OE_ALWAYS_INLINE
+  OE_tc_stm_get_time_upper_word(OE_reg stm_id)
 {
-  return OSEE_TC_STM_REG(stm_id, OSEE_TC_STM_CAP_OFF);
+  return OE_TC_STM_REG(stm_id, OE_TC_STM_CAP_OFF);
 }
 
 /** @brief Mask for STM OCDS suspension: SUS := 2, SUS_P := 1 */
-#define OSEE_TC_STM_OCS_SUS_CTRL_MASK\
-  ((((OSEE_reg)1U) << 28U) | (((OSEE_reg)2U) << 24U))
+#define OE_TC_STM_OCS_SUS_CTRL_MASK\
+  ((((OE_reg)1U) << 28U) | (((OE_reg)2U) << 24U))
 
 /**
  * @brief  Used to set STM suspension when OCDS take control
  */
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE
-  OSEE_tc_stm_ocds_suspend_control(OSEE_reg stm_id)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE
+  OE_tc_stm_ocds_suspend_control(OE_reg stm_id)
 {
-  OSEE_TC_STM_REG(stm_id, OSEE_TC_STM_OCS_OFF) =
-    OSEE_TC_STM_OCS_SUS_CTRL_MASK;
+  OE_TC_STM_REG(stm_id, OE_TC_STM_OCS_OFF) =
+    OE_TC_STM_OCS_SUS_CTRL_MASK;
 }
 
 /**
  * @brief  Used as bounded busy wait.
  * @param  usec the number of microseconds you want to wait
  */
-void OSEE_tc_delay(OSEE_reg usec);
+void OE_tc_delay(OE_reg usec);
 
 /**
  *  Legit Devices for System Timer Defines.
@@ -913,18 +913,18 @@ void OSEE_tc_delay(OSEE_reg usec);
  * (Check the documentention for more information)
  *
  * Valid system timer devices are:
- * - OSEE_TC_STM_SR0
- * - OSEE_TC_STM_SR1
+ * - OE_TC_STM_SR0
+ * - OE_TC_STM_SR1
  */
-#define OSEE_TC_STM_SR0 1
-#define OSEE_TC_STM_SR1 2  /**< see OSEE_TC_STM_SR0 */
+#define OE_TC_STM_SR0 1
+#define OE_TC_STM_SR1 2  /**< see OE_TC_STM_SR0 */
 
 /** @brief Initialize a global variable with STM frequency. */
-extern void OSEE_tc_stm_set_clockpersec(void);
+extern void OE_tc_stm_set_clockpersec(void);
 
-#if (defined(OSEE_SINGLECORE))
-#if (!defined(OSEE_SYSTEM_TIMER_DEVICE)) ||\
-  (OSEE_SYSTEM_TIMER_DEVICE != OSEE_TC_STM_SR0)
+#if (defined(OE_SINGLECORE))
+#if (!defined(OE_SYSTEM_TIMER_DEVICE)) ||\
+  (OE_SYSTEM_TIMER_DEVICE != OE_TC_STM_SR0)
 /**
   *  @brief Programs STM compare register 0 to trigger an IRQ after
   *         usec microseconds
@@ -933,17 +933,17 @@ extern void OSEE_tc_stm_set_clockpersec(void);
   *         With intvec == 0, the correponding service request node is left
   *         unprogrammed or resetted.
   */
-void OSEE_tc_stm_set_sr0(OSEE_reg usec, OSEE_tc_isr_hw_prio intvec);
+void OE_tc_stm_set_sr0(OE_reg usec, OE_tc_isr_hw_prio intvec);
 
 /**
   *  @brief Change previous programmed STM compare register 0 to trigger next
             IRQ after usec microseconds
   *  @param usec microseconds after you want get an IRQ on intvec
   */
-void OSEE_tc_stm_set_sr0_next_match(OSEE_reg usec);
-#endif /* OSEE_SYSTEM_TIMER_DEVICE != OSEE_TC_STM_SR0 */
-#if (!defined(OSEE_SYSTEM_TIMER_DEVICE)) ||\
-  (OSEE_SYSTEM_TIMER_DEVICE != OSEE_TC_STM_SR1)
+void OE_tc_stm_set_sr0_next_match(OE_reg usec);
+#endif /* OE_SYSTEM_TIMER_DEVICE != OE_TC_STM_SR0 */
+#if (!defined(OE_SYSTEM_TIMER_DEVICE)) ||\
+  (OE_SYSTEM_TIMER_DEVICE != OE_TC_STM_SR1)
 /**
   *  @brief Programs STM compare register 1 to trigger an IRQ after
   *         usec microseconds
@@ -952,28 +952,28 @@ void OSEE_tc_stm_set_sr0_next_match(OSEE_reg usec);
   *         With intvec == 0, the correponding service request node is left
   *         unprogrammed or resetted.
   */
-void OSEE_tc_stm_set_sr1(OSEE_reg usec, OSEE_tc_isr_hw_prio intvec);
+void OE_tc_stm_set_sr1(OE_reg usec, OE_tc_isr_hw_prio intvec);
 
 /**
   * @brief  Change previous programmed STM compare register 1 to trigger next
   *         IRQ after usec microseconds
   * @param  usec microseconds after you want get an IRQ on intvec
   */
-void OSEE_tc_stm_set_sr1_next_match(OSEE_reg usec);
-#endif /* OSEE_SYSTEM_TIMER_DEVICE != OSEE_TC_STM_SR1 */
-#else /* OSEE_SINGLECORE */
-#if ((!defined(OSEE_SYSTEM_TIMER_CORE0_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE0_DEVICE != OSEE_TC_STM_SR0)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE1_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE1_DEVICE != OSEE_TC_STM_SR0)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE2_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE2_DEVICE != OSEE_TC_STM_SR0)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE3_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE3_DEVICE != OSEE_TC_STM_SR0)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE4_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE4_DEVICE != OSEE_TC_STM_SR0)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE6_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE6_DEVICE != OSEE_TC_STM_SR0))
+void OE_tc_stm_set_sr1_next_match(OE_reg usec);
+#endif /* OE_SYSTEM_TIMER_DEVICE != OE_TC_STM_SR1 */
+#else /* OE_SINGLECORE */
+#if ((!defined(OE_SYSTEM_TIMER_CORE0_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE0_DEVICE != OE_TC_STM_SR0)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE1_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE1_DEVICE != OE_TC_STM_SR0)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE2_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE2_DEVICE != OE_TC_STM_SR0)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE3_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE3_DEVICE != OE_TC_STM_SR0)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE4_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE4_DEVICE != OE_TC_STM_SR0)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE6_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE6_DEVICE != OE_TC_STM_SR0))
 /**
   *  @brief Programs STM compare register 0 to trigger an IRQ after
   *         usec microseconds
@@ -982,27 +982,27 @@ void OSEE_tc_stm_set_sr1_next_match(OSEE_reg usec);
   *         With intvec == 0, the correponding service request node is left
   *         unprogrammed or resetted.
   */
-void OSEE_tc_stm_set_sr0(OSEE_reg usec, OSEE_tc_isr_hw_prio intvec);
+void OE_tc_stm_set_sr0(OE_reg usec, OE_tc_isr_hw_prio intvec);
 
 /**
   *  @brief Change previous programmed STM compare register 0 to trigger next
             IRQ after usec microseconds
   *  @param usec microseconds after you want get an IRQ on intvec
   */
-void OSEE_tc_stm_set_sr0_next_match(OSEE_reg usec);
+void OE_tc_stm_set_sr0_next_match(OE_reg usec);
 #endif
-#if ((!defined(OSEE_SYSTEM_TIMER_CORE0_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE0_DEVICE != OSEE_TC_STM_SR1)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE1_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE1_DEVICE != OSEE_TC_STM_SR1)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE2_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE2_DEVICE != OSEE_TC_STM_SR1)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE3_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE3_DEVICE != OSEE_TC_STM_SR1)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE4_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE4_DEVICE != OSEE_TC_STM_SR1)) && \
-    ((!defined(OSEE_SYSTEM_TIMER_CORE6_DEVICE)) ||            \
-      (OSEE_SYSTEM_TIMER_CORE6_DEVICE != OSEE_TC_STM_SR1))
+#if ((!defined(OE_SYSTEM_TIMER_CORE0_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE0_DEVICE != OE_TC_STM_SR1)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE1_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE1_DEVICE != OE_TC_STM_SR1)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE2_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE2_DEVICE != OE_TC_STM_SR1)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE3_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE3_DEVICE != OE_TC_STM_SR1)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE4_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE4_DEVICE != OE_TC_STM_SR1)) && \
+    ((!defined(OE_SYSTEM_TIMER_CORE6_DEVICE)) ||            \
+      (OE_SYSTEM_TIMER_CORE6_DEVICE != OE_TC_STM_SR1))
 /**
   *  @brief Programs STM compare register 1 to trigger an IRQ after
   *         usec microseconds
@@ -1011,78 +1011,78 @@ void OSEE_tc_stm_set_sr0_next_match(OSEE_reg usec);
   *         With intvec == 0, the correponding service request node is left
   *         unprogrammed or resetted.
   */
-void OSEE_tc_stm_set_sr1(OSEE_reg usec, OSEE_tc_isr_hw_prio intvec);
+void OE_tc_stm_set_sr1(OE_reg usec, OE_tc_isr_hw_prio intvec);
 
 /**
   * @brief  Change previous programmed STM compare register 1 to trigger next
   *         IRQ after usec microseconds
   * @param  usec microseconds after you want get an IRQ on intvec
   */
-void OSEE_tc_stm_set_sr1_next_match(OSEE_reg usec);
+void OE_tc_stm_set_sr1_next_match(OE_reg usec);
 #endif
-#endif /* OSEE_SINGLECORE */
+#endif /* OE_SINGLECORE */
 
 /** STM fSOURCE PLL divider */
-#if (!defined(OSEE_TC_STMDIV_VALUE))
+#if (!defined(OE_TC_STMDIV_VALUE))
 /* Write at 300 MHz on STM registers fails, so is a MUST to slow down fSTM. */
-#if (OSEE_CPU_CLOCK >= 300000000U)
-#define OSEE_TC_STMDIV_VALUE  (2U)
+#if (OE_CPU_CLOCK >= 300000000U)
+#define OE_TC_STMDIV_VALUE  (2U)
 #else
-#define OSEE_TC_STMDIV_VALUE  (1U)
+#define OE_TC_STMDIV_VALUE  (1U)
 #endif
-#endif /* OSEE_TC_STMDIV_VALUE */
+#endif /* OE_TC_STMDIV_VALUE */
 
 /******************************************************************************
                               SCU Support
  *****************************************************************************/
 /** \brief SCU Module Address */
-#define OSEE_TC_SCU_BASE (0xF0036000U)
+#define OE_TC_SCU_BASE (0xF0036000U)
 /** \brief Evaluate a Register Address */
-#define OSEE_TC_SCU_REG_ADDR(offset)  (OSEE_TC_SCU_BASE + (offset))
+#define OE_TC_SCU_REG_ADDR(offset)  (OE_TC_SCU_BASE + (offset))
 /** \brief Access a SCU register as 32-bit variable */
-#define OSEE_TC_SCU_REG(offset)\
-  (*(OSEE_reg volatile *)OSEE_TC_SCU_REG_ADDR(offset))
+#define OE_TC_SCU_REG(offset)\
+  (*(OE_reg volatile *)OE_TC_SCU_REG_ADDR(offset))
 
 /** \brief SCU offset 0x10, OSC Control Register */
-#define OSEE_TC_SCU_OSCCON_OFF      (0x10U)
+#define OE_TC_SCU_OSCCON_OFF      (0x10U)
 /** \brief SCU offset 0x14, PLL Status Register */
-#define OSEE_TC_SCU_PLLSTAT_OFF     (0x14U)
+#define OE_TC_SCU_PLLSTAT_OFF     (0x14U)
 /** \brief SCU offset 0x18, PLL Configuration 0 Register */
-#define OSEE_TC_SCU_PLLCON0_OFF     (0x18U)
+#define OE_TC_SCU_PLLCON0_OFF     (0x18U)
 /** \brief SCU offset 0x1C, PLL Configuration 1 Register */
-#define OSEE_TC_SCU_PLLCON1_OFF     (0x1CU)
+#define OE_TC_SCU_PLLCON1_OFF     (0x1CU)
 /** \brief SCU offset 0x20, PLL Configuration 2 Register */
-#define OSEE_TC_SCU_PLLCON2_OFF     (0x20U)
+#define OE_TC_SCU_PLLCON2_OFF     (0x20U)
 /** \brief SCU offset 0x24, PLL_ERAY Status Register */
-#define OSEE_TC_SCU_PLLERAYSTAT_OFF (0x24U)
+#define OE_TC_SCU_PLLERAYSTAT_OFF (0x24U)
 /** \brief SCU offset 0x28, PLL_ERAY Configuration 0 Register */
-#define OSEE_TC_SCU_PLLERAYCON0_OFF (0x28U)
+#define OE_TC_SCU_PLLERAYCON0_OFF (0x28U)
 /** \brief SCU offset 0x2C, PLL_ERAY Configuration 1 Register */
-#define OSEE_TC_SCU_PLLERAYCON1_OFF (0x2CU)
+#define OE_TC_SCU_PLLERAYCON1_OFF (0x2CU)
 /** \brief SCU offset 0x30, CCU Clock Control Register 0 */
-#define OSEE_TC_SCU_CCUCON0_OFF     (0x30U)
+#define OE_TC_SCU_CCUCON0_OFF     (0x30U)
 /** \brief SCU offset 0x34, CCU Clock Control Register 1 */
-#define OSEE_TC_SCU_CCUCON1_OFF     (0x34U)
+#define OE_TC_SCU_CCUCON1_OFF     (0x34U)
 
 /** \brief SCU offset 0x40, CCU Clock Control Register 2 */
-#define OSEE_TC_SCU_CCUCON2_OFF     (0x40U)
+#define OE_TC_SCU_CCUCON2_OFF     (0x40U)
 /** \brief SCU offset 0x44, CCU Clock Control Register 3 */
-#define OSEE_TC_SCU_CCUCON3_OFF     (0x44U)
+#define OE_TC_SCU_CCUCON3_OFF     (0x44U)
 /** \brief SCU offset 0x48, CCU Clock Control Register 4 */
-#define OSEE_TC_SCU_CCUCON4_OFF     (0x48U)
+#define OE_TC_SCU_CCUCON4_OFF     (0x48U)
 /** \brief SCU offset 0x4C, CCU Clock Control Register 5 */
-#define OSEE_TC_SCU_CCUCON5_OFF     (0x4CU)
+#define OE_TC_SCU_CCUCON5_OFF     (0x4CU)
 
 /** \brief SCU offset 0x80, CCU Clock Control Register 6 */
-#define OSEE_TC_SCU_CCUCON6_OFF     (0x80U)
+#define OE_TC_SCU_CCUCON6_OFF     (0x80U)
 /** \brief SCU offset 0x84, CCU Clock Control Register 7 */
-#define OSEE_TC_SCU_CCUCON7_OFF     (0x84U)
+#define OE_TC_SCU_CCUCON7_OFF     (0x84U)
 /** \brief SCU offset 0x88, CCU Clock Control Register 8 */
-#define OSEE_TC_SCU_CCUCON8_OFF     (0x88U)
+#define OE_TC_SCU_CCUCON8_OFF     (0x88U)
 /** \brief SCU offset 0x8C, CCU Clock Control Register 9 */
-#define OSEE_TC_SCU_CCUCON9_OFF     (0x8CU)
+#define OE_TC_SCU_CCUCON9_OFF     (0x8CU)
 
-#if (!defined(OSEE_TC_2G))
+#if (!defined(OE_TC_2G))
 /** \brief  OSC Control Register */
 typedef struct
 {
@@ -1124,7 +1124,7 @@ typedef struct
   unsigned int cap3en   : 1;
 /** \brief Reserved */
   unsigned int          : 4;
-} OSEE_tc_SCU_OSCCON_bits;
+} OE_tc_SCU_OSCCON_bits;
 
 /** \brief  PLL Status Register */
 typedef struct
@@ -1147,18 +1147,18 @@ typedef struct
   unsigned int modrun   : 1;
 /** \brief Reserved */
   unsigned int          : 24;
-} OSEE_tc_SCU_PLLSTAT_bits;
+} OE_tc_SCU_PLLSTAT_bits;
 
 /** PLL Status register */
 typedef union {
-  OSEE_reg                  reg;   /**< the register */
-  OSEE_tc_SCU_PLLSTAT_bits  bits;  /**< the bits of the PLL Status register */
-} OSEE_tc_SCU_PLLSTAT;
+  OE_reg                  reg;   /**< the register */
+  OE_tc_SCU_PLLSTAT_bits  bits;  /**< the bits of the PLL Status register */
+} OE_tc_SCU_PLLSTAT;
 
 /** Macro to access the PLLSTAT register */
-#define OSEE_TC_SCU_PLLSTAT\
-  (*(OSEE_tc_SCU_PLLSTAT volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_PLLSTAT_OFF)\
+#define OE_TC_SCU_PLLSTAT\
+  (*(OE_tc_SCU_PLLSTAT volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_PLLSTAT_OFF)\
   )
 
 /** \brief  PLL Configuration 0 Register */
@@ -1194,18 +1194,18 @@ typedef struct
   unsigned int pdiv       : 4;
 /** \brief Reserved */
   unsigned int            : 4;
-} OSEE_tc_SCU_PLLCON0_bits;
+} OE_tc_SCU_PLLCON0_bits;
 
 /** PLL Configuration 0 register */
 typedef union {
-  OSEE_reg                  reg;   /**< the register */
-  OSEE_tc_SCU_PLLCON0_bits  bits;  /**< bits of the register */
-} OSEE_tc_SCU_PLLCON0;
+  OE_reg                  reg;   /**< the register */
+  OE_tc_SCU_PLLCON0_bits  bits;  /**< bits of the register */
+} OE_tc_SCU_PLLCON0;
 
 /** Macro to access the PLL Configuration 0 register */
-#define OSEE_TC_SCU_PLLCON0\
-  (*(OSEE_tc_SCU_PLLCON0 volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_PLLCON0_OFF)\
+#define OE_TC_SCU_PLLCON0\
+  (*(OE_tc_SCU_PLLCON0 volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_PLLCON0_OFF)\
   )
 
 /** \brief  PLL Configuration 1 Register */
@@ -1223,18 +1223,18 @@ typedef struct
   unsigned int k1div  : 7;
 /** \brief Reserved */
   unsigned int        : 9;
-} OSEE_tc_SCU_PLLCON1_bits;
+} OE_tc_SCU_PLLCON1_bits;
 
 /** PLL Configuration 1 register */
 typedef union {
-  OSEE_reg                  reg;   /**< the register */
-  OSEE_tc_SCU_PLLCON1_bits  bits;  /**< bits of the register */
-} OSEE_tc_SCU_PLLCON1;
+  OE_reg                  reg;   /**< the register */
+  OE_tc_SCU_PLLCON1_bits  bits;  /**< bits of the register */
+} OE_tc_SCU_PLLCON1;
 
 /** Macro to access the PLL Configuration 1 register */
-#define OSEE_TC_SCU_PLLCON1\
-  (*(OSEE_tc_SCU_PLLCON1 volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_PLLCON1_OFF)\
+#define OE_TC_SCU_PLLCON1\
+  (*(OE_tc_SCU_PLLCON1 volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_PLLCON1_OFF)\
   )
 
 /** \brief  CCU Clock Control Register 0 */
@@ -1264,43 +1264,43 @@ typedef struct
   unsigned int up         : 1;
 /** \brief [31:31] Lock Status (rh) */
   unsigned int lck        : 1;
-} OSEE_tc_SCU_CCUCON0_bits;
+} OE_tc_SCU_CCUCON0_bits;
 
 /** Baud1 Divider Reload Value. 0001B fBAUD1 = fsource. Bits [0:3] */
-#define OSEE_TC_SCU_CCUCON0_BAUD1DIV(baud1)\
-  (((OSEE_reg)(baud1)) & (OSEE_reg)0xFU)
+#define OE_TC_SCU_CCUCON0_BAUD1DIV(baud1)\
+  (((OE_reg)(baud1)) & (OE_reg)0xFU)
 /** Baud2 Divider Reload Value. 0001B fBAUD2 = fsource. Bits[4:7] */
-#define OSEE_TC_SCU_CCUCON0_BAUD2DIV(baud2)\
-  ((((OSEE_reg)(baud2)) & (OSEE_reg)0xF) << 4U)
+#define OE_TC_SCU_CCUCON0_BAUD2DIV(baud2)\
+  ((((OE_reg)(baud2)) & (OE_reg)0xF) << 4U)
 /** SRI Divider Reload Value 0001B fSRI = fsource. Bits [8:11] */
-#define OSEE_TC_SCU_CCUCON0_SRI(sri)\
-  ((((OSEE_reg)(sri)) & (OSEE_reg)0xFU) << 8U)
+#define OE_TC_SCU_CCUCON0_SRI(sri)\
+  ((((OE_reg)(sri)) & (OE_reg)0xFU) << 8U)
 /** Low Power Divider Reload Value 0001B fSRI, fSPB, and fBBB = fsource/30;
     fMAX = fsource/15. Bits [15:12] */
-#define OSEE_TC_SCU_CCUCON0_LPDIV(lpdiv)\
-  ((((OSEE_reg)(lpdiv)) & (OSEE_reg)0xFU) << 12U)
+#define OE_TC_SCU_CCUCON0_LPDIV(lpdiv)\
+  ((((OE_reg)(lpdiv)) & (OE_reg)0xFU) << 12U)
 /** SPB Divider Reload Value 0001B Reserved 0010B fSPB = fsource/2.
     Bits [16:19] */
-#define OSEE_TC_SCU_CCUCON0_SPB(spb)\
-  (((((OSEE_reg)(spb)) & (OSEE_reg)0xFU) == 1U)?\
-    ((OSEE_reg)0x2U << 16U):\
-    ((((OSEE_reg)(spb)) & (OSEE_reg)0xFU) << 16U))
+#define OE_TC_SCU_CCUCON0_SPB(spb)\
+  (((((OE_reg)(spb)) & (OE_reg)0xFU) == 1U)?\
+    ((OE_reg)0x2U << 16U):\
+    ((((OE_reg)(spb)) & (OE_reg)0xFU) << 16U))
 /** FSI2 Divider Reload Value 10B fFSI2 = fSRI / 2 for SRIDIV = 0001B
     or 0010B, else fFSI2 = fSRI. Bits [20:21] */
-#define OSEE_TC_SCU_CCUCON0_FSI2(fsi2)\
-  ((((OSEE_reg)(fsi2)) & (OSEE_reg)0x3U) << 20U)
+#define OE_TC_SCU_CCUCON0_FSI2(fsi2)\
+  ((((OE_reg)(fsi2)) & (OE_reg)0x3U) << 20U)
 /** FSI Divider Reload Value 10B fFSI = fSRI / 2 for SRIDIV = 0001B
     or 0010B, else fFSI = fSR. Bits [24:25] */
-#define OSEE_TC_SCU_CCUCON0_FSI(fsi)\
-  ((((OSEE_reg)(fsi)) & (OSEE_reg)0x3U) << 24U)
+#define OE_TC_SCU_CCUCON0_FSI(fsi)\
+  ((((OE_reg)(fsi)) & (OE_reg)0x3U) << 24U)
 /** ADC Clock Selection This bit field defines the clock source that is
     used for the clock fADC of the ADCs. Bits[26:27]*/
-#define OSEE_TC_SCU_CCUCON0_ADC(adc)\
-  ((((OSEE_reg)(adc)) & (OSEE_reg)0x3U) << 26U)
+#define OE_TC_SCU_CCUCON0_ADC(adc)\
+  ((((OE_reg)(adc)) & (OE_reg)0x3U) << 26U)
 /** Clock Selection: fERAY and fFSI. 1B fPLL is used as clock source fsource.
     Bits [28:29] */
-#define OSEE_TC_SCU_CCUCON0_CLKSEL(clk)\
-  ((((OSEE_reg)(clk)) & (OSEE_reg)0x1U) << 28U)
+#define OE_TC_SCU_CCUCON0_CLKSEL(clk)\
+  ((((OE_reg)(clk)) & (OE_reg)0x1U) << 28U)
 
 /** \brief  CCU Clock Control Register 1 */
 typedef struct
@@ -1325,34 +1325,34 @@ typedef struct
   unsigned int up         : 1;
 /** \brief [31:31] Lock Status (rh) */
   unsigned int lck        : 1;
-} OSEE_tc_SCU_CCUCON1_bits;
+} OE_tc_SCU_CCUCON1_bits;
 
 /** STM Divider Reload Value. 0001B fSTM = fsource. Bits[8:11] */
-#define OSEE_TC_SCU_CCUCON1_STMDIV(stm)\
-  ((((OSEE_reg)(stm)) & (OSEE_reg)0x3U) << 8U)
+#define OE_TC_SCU_CCUCON1_STMDIV(stm)\
+  ((((OE_reg)(stm)) & (OE_reg)0x3U) << 8U)
 /** GTM Divider Reload Value. 0001B fGTM = fsource. Bits[12:15] */
-#define OSEE_TC_SCU_CCUCON1_GTMDIV(gtm)\
-  ((((OSEE_reg)(gtm)) & (OSEE_reg)0x3U) << 12U)
+#define OE_TC_SCU_CCUCON1_GTMDIV(gtm)\
+  ((((OE_reg)(gtm)) & (OE_reg)0x3U) << 12U)
 /** Input Selection source for the PLL and PLL_ERAY. 01B fOSC0
     is used as clock source. Bits [28:29] */
-#define OSEE_TC_SCU_CCUCON1_INSEL(in)\
-  ((((OSEE_reg)(in)) & (OSEE_reg)0x1U) << 28U)
+#define OE_TC_SCU_CCUCON1_INSEL(in)\
+  ((((OE_reg)(in)) & (OE_reg)0x1U) << 28U)
 
 /**  CCU0 Init Value */
-#if (!defined(OSEE_TC_SCU_CCUCON0_INIT))
-#define OSEE_TC_SCU_CCUCON0_INIT\
-  (OSEE_TC_SCU_CCUCON0_BAUD1DIV(1U) |\
-    OSEE_TC_SCU_CCUCON0_SRI(1U) | OSEE_TC_SCU_CCUCON0_SPB(2U) |\
-    OSEE_TC_SCU_CCUCON0_FSI2(2U) | OSEE_TC_SCU_CCUCON0_FSI(2U) |\
-    OSEE_TC_SCU_CCUCON0_CLKSEL(1U) /* | OSEE_TC_SCU_CCUCON0_BAUD2DIV(1U) */)
-#endif /* !OSEE_TC_SCU_CCUCON0_INIT */
+#if (!defined(OE_TC_SCU_CCUCON0_INIT))
+#define OE_TC_SCU_CCUCON0_INIT\
+  (OE_TC_SCU_CCUCON0_BAUD1DIV(1U) |\
+    OE_TC_SCU_CCUCON0_SRI(1U) | OE_TC_SCU_CCUCON0_SPB(2U) |\
+    OE_TC_SCU_CCUCON0_FSI2(2U) | OE_TC_SCU_CCUCON0_FSI(2U) |\
+    OE_TC_SCU_CCUCON0_CLKSEL(1U) /* | OE_TC_SCU_CCUCON0_BAUD2DIV(1U) */)
+#endif /* !OE_TC_SCU_CCUCON0_INIT */
 
 /**  CCU1 Init Value */
-#if (!defined(OSEE_TC_SCU_CCUCON1_INIT))
-#define OSEE_TC_SCU_CCUCON1_INIT\
-  (OSEE_TC_SCU_CCUCON1_STMDIV(OSEE_TC_STMDIV_VALUE) |\
-    OSEE_TC_SCU_CCUCON1_GTMDIV(1U) | OSEE_TC_SCU_CCUCON1_INSEL(1U))
-#endif /* !OSEE_TC_SCU_CCUCON1_INIT */
+#if (!defined(OE_TC_SCU_CCUCON1_INIT))
+#define OE_TC_SCU_CCUCON1_INIT\
+  (OE_TC_SCU_CCUCON1_STMDIV(OE_TC_STMDIV_VALUE) |\
+    OE_TC_SCU_CCUCON1_GTMDIV(1U) | OE_TC_SCU_CCUCON1_INSEL(1U))
+#endif /* !OE_TC_SCU_CCUCON1_INIT */
 
 /** CCUCONX bit 30  This bit defined the update for the CCU.
     Please note that setting this bit request a CCU
@@ -1362,7 +1362,7 @@ typedef struct
     1B A new complete parameter set is transferred
     to the CCU. All three registers CCUCON0, 1
     and 5 content is taken by CCU. */
-#define OSEE_TC_SCU_CCUCONX_UP ((OSEE_reg)1U << 30U)
+#define OE_TC_SCU_CCUCONX_UP ((OE_reg)1U << 30U)
 #else
 
 /** \brief OSC Control Register */
@@ -1406,7 +1406,7 @@ typedef struct
   unsigned int cap3en   :1;
   /** \brief [31:28] Reserved */
   unsigned int          :4;
-} OSEE_tc_SCU_OSCCON_bits;
+} OE_tc_SCU_OSCCON_bits;
 
 /** \brief System PLL Configuration 0 Register */
 typedef struct
@@ -1433,26 +1433,26 @@ typedef struct
   unsigned int          :3;
   /** \brief [30:31] Input Selection - INSEL (rw) */
   unsigned int insel    :2;
-} OSEE_tc_SYSPLLCON0_bits;
+} OE_tc_SYSPLLCON0_bits;
 
 /** Input Selection
     This bit field defines as clock source for the two PLLs
     (System PLL and Peripheral PLL).
  */
-#define OSEE_TC_SCU_SYSPLLCON_INSEL_BACKUP  (0x0U) /** Input Selection BACKUP */
-#define OSEE_TC_SCU_SYSPLLCON_INSEL_FOSC0   (0x1U) /** Input Selection FOSC0 */
-#define OSEE_TC_SCU_SYSPLLCON_INSEL_SYSCLK  (0x2U) /** Input Selection SYSCLK */
+#define OE_TC_SCU_SYSPLLCON_INSEL_BACKUP  (0x0U) /** Input Selection BACKUP */
+#define OE_TC_SCU_SYSPLLCON_INSEL_FOSC0   (0x1U) /** Input Selection FOSC0 */
+#define OE_TC_SCU_SYSPLLCON_INSEL_SYSCLK  (0x2U) /** Input Selection SYSCLK */
 
 /** \brief System PLL Configuration 0 Register */
 typedef union {
-  OSEE_reg                reg;
-  OSEE_tc_SYSPLLCON0_bits bits;
-} OSEE_tc_SYSPLLCON0;
+  OE_reg                reg;
+  OE_tc_SYSPLLCON0_bits bits;
+} OE_tc_SYSPLLCON0;
 
 /** \brief System PLL Configuration 0 Register */
-#define OSEE_TC_SCU_SYSPLLCON0\
-  (*(OSEE_tc_SYSPLLCON0 volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_PLLCON0_OFF)\
+#define OE_TC_SCU_SYSPLLCON0\
+  (*(OE_tc_SYSPLLCON0 volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_PLLCON0_OFF)\
   )
 
 /** \brief System PLL Configuration 1 Register */
@@ -1462,18 +1462,18 @@ typedef struct
   unsigned int k2div  :3;
   /** \brief [3:31] Reserved */
   unsigned int        :29;
-} OSEE_tc_SYSPLLCON1_bits;
+} OE_tc_SYSPLLCON1_bits;
 
 /** \brief System PLL Configuration 1 Register */
 typedef union {
-  OSEE_reg                reg;
-  OSEE_tc_SYSPLLCON1_bits bits;
-} OSEE_tc_SYSPLLCON1;
+  OE_reg                reg;
+  OE_tc_SYSPLLCON1_bits bits;
+} OE_tc_SYSPLLCON1;
 
 /** \brief System PLL Configuration 1 Register */
-#define OSEE_TC_SCU_SYSPLLCON1\
-  (*(OSEE_tc_SYSPLLCON1 volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_PLLCON1_OFF)\
+#define OE_TC_SCU_SYSPLLCON1\
+  (*(OE_tc_SYSPLLCON1 volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_PLLCON1_OFF)\
   )
 
 /** \brief System PLL Status Register */
@@ -1495,18 +1495,18 @@ typedef struct
   unsigned int  modrun  :1;
   /** \brief [8:31] Reserved */
   unsigned int          :24;
-} OSEE_tc_SCU_SYSPLLSTAT_bits;
+} OE_tc_SCU_SYSPLLSTAT_bits;
 
 /** \brief System PLL Status Register */
 typedef union {
-  OSEE_reg                    reg;
-  OSEE_tc_SCU_SYSPLLSTAT_bits bits;
-} OSEE_tc_SCU_SYSPLLSTAT;
+  OE_reg                    reg;
+  OE_tc_SCU_SYSPLLSTAT_bits bits;
+} OE_tc_SCU_SYSPLLSTAT;
 
 /** \brief System PLL Status Register */
-#define OSEE_TC_SCU_SYSPLLSTAT\
-  (*(OSEE_tc_SCU_SYSPLLSTAT volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_PLLSTAT_OFF)\
+#define OE_TC_SCU_SYSPLLSTAT\
+  (*(OE_tc_SCU_SYSPLLSTAT volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_PLLSTAT_OFF)\
   )
 
 /** \brief Peripheral PLL Status Register */
@@ -1528,18 +1528,18 @@ typedef struct
   unsigned int          :1;
   /** \brief [7:31] Reserved */
   unsigned int          :25;
-} OSEE_tc_SCU_PERPLLSTAT_bits;
+} OE_tc_SCU_PERPLLSTAT_bits;
 
 /** \brief Peripheral PLL Status Register */
 typedef union {
-  OSEE_reg                    reg;
-  OSEE_tc_SCU_PERPLLSTAT_bits bits;
-} OSEE_tc_SCU_PERPLLSTAT;
+  OE_reg                    reg;
+  OE_tc_SCU_PERPLLSTAT_bits bits;
+} OE_tc_SCU_PERPLLSTAT;
 
 /** \brief Peripheral PLL Status Register */
-#define OSEE_TC_SCU_PERPLLSTAT\
-  (*(OSEE_tc_SCU_PERPLLSTAT volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_PLLERAYSTAT_OFF)\
+#define OE_TC_SCU_PERPLLSTAT\
+  (*(OE_tc_SCU_PERPLLSTAT volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_PLLERAYSTAT_OFF)\
   )
 
 /** \brief Peripheral PLL Configuration 0 Register */
@@ -1563,7 +1563,7 @@ typedef struct
   unsigned int pdiv     :3;
   /** \brief [31:27] Reserved */
   unsigned int          :5;
-} OSEE_tc_SCU_PERPLLCON0_bits;
+} OE_tc_SCU_PERPLLCON0_bits;
 
 /** \brief Peripheral PLL Configuration 1 Register */
 typedef struct
@@ -1576,7 +1576,7 @@ typedef struct
   unsigned int k3div    :3;
   /** \brief [11:31] Reserved */
   unsigned int          :21;
-} OSEE_tc_SCU_PERPLLCON1_bits;
+} OE_tc_SCU_PERPLLCON1_bits;
 
 /** \brief CCU Clock Control Register 0 */
 typedef struct
@@ -1605,7 +1605,7 @@ typedef struct
   unsigned int up       :1;
   /** \brief [31:31] Lock Status - LCK (rh) */
   unsigned int lck      :1;
-}  OSEE_tc_SCU_CCUCON0_bits;
+}  OE_tc_SCU_CCUCON0_bits;
 
 /** \brief CCU Clock Control Register 1 */
 typedef struct
@@ -1636,23 +1636,23 @@ typedef struct
   unsigned int            :1;
   /** \brief [31:31] Lock Status - LCK (rh) */
   unsigned int lck        :1;
-} OSEE_tc_SCU_CCUCON1_bits;
-#endif  /* !OSEE_TC_2G */
+} OE_tc_SCU_CCUCON1_bits;
+#endif  /* !OE_TC_2G */
 
 /** \brief  OSC Control Register */
 typedef union {
-  OSEE_reg                reg;  /**< the register value */
-  OSEE_tc_SCU_OSCCON_bits bits; /**< the bits of the SCU OSCCON Register */
-} OSEE_tc_SCU_OSCCON;
+  OE_reg                reg;  /**< the register value */
+  OE_tc_SCU_OSCCON_bits bits; /**< the bits of the SCU OSCCON Register */
+} OE_tc_SCU_OSCCON;
 
 /** Command to reset Watchdog Oscillator. Bits[2] */
-#define OSEE_TC_SCU_OSCCON_OSCRES ((OSEE_reg)1U << 2U)
+#define OE_TC_SCU_OSCCON_OSCRES ((OE_reg)1U << 2U)
 /** Default Reset Value for OSCCCON.GAIN Should not be Changed. Bits[3:4] */
-#define OSEE_TC_SCU_OSCCON_GAINSEL ((OSEE_reg)3U << 3U)
+#define OE_TC_SCU_OSCCON_GAINSEL ((OE_reg)3U << 3U)
 /** Extern Cristall is 00 mode so this define doesn't change the OSSCON
     Value. Bits[5:6] */
-#define OSEE_TC_SCU_OSCCON_MODE(mode)\
-  ((((OSEE_reg)(mode)) & (OSEE_reg)0x3U) << 5U)
+#define OE_TC_SCU_OSCCON_MODE(mode)\
+  ((((OE_reg)(mode)) & (OE_reg)0x3U) << 5U)
 /**
  *   OSCVAL  defines the divider value that generates  the reference clock
  *  that is supervised by the oscillator watchdog.
@@ -1663,36 +1663,36 @@ typedef union {
  * This bit field defines the divider value that generates the reference clock
  * that is supervised by the oscillator watchdog.
  * fOSCREF = OSCCON.OSCVAL + 1 + 16 MHz. */
-#define OSEE_TC_SCU_OSCCON_OSCVAL(oscval)\
-  ((((OSEE_reg)(oscval)) & (OSEE_reg)0xFU) << 16U)
+#define OE_TC_SCU_OSCCON_OSCVAL(oscval)\
+  ((((OE_reg)(oscval)) & (OE_reg)0xFU) << 16U)
 
 /** \brief  OSC Control Register */
-#define OSEE_TC_SCU_OSCCON\
-  (*(OSEE_tc_SCU_OSCCON volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_OSCCON_OFF)\
+#define OE_TC_SCU_OSCCON\
+  (*(OE_tc_SCU_OSCCON volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_OSCCON_OFF)\
   )
 /** \brief  SCU Clock Control Register 0 */
 typedef union {
-  OSEE_reg                  reg;  /**< the register value */
-  OSEE_tc_SCU_CCUCON0_bits  bits; /**< the bits of the SCU Clk Control Reg 0 */
-} OSEE_tc_SCU_CCUCON0;
+  OE_reg                  reg;  /**< the register value */
+  OE_tc_SCU_CCUCON0_bits  bits; /**< the bits of the SCU Clk Control Reg 0 */
+} OE_tc_SCU_CCUCON0;
 
 /** \brief  SCU Clock Control Register 0 */
-#define OSEE_TC_SCU_CCUCON0\
-  (*(OSEE_tc_SCU_CCUCON0 volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_CCUCON0_OFF)\
+#define OE_TC_SCU_CCUCON0\
+  (*(OE_tc_SCU_CCUCON0 volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_CCUCON0_OFF)\
   )
 
 /** \brief  SCU Clock Control Register 1 */
 typedef union {
-  OSEE_reg                  reg;  /**< the register value */
-  OSEE_tc_SCU_CCUCON1_bits  bits; /**< the bits of the SCU Clk Control Reg 1 */
-} OSEE_tc_SCU_CCUCON1;
+  OE_reg                  reg;  /**< the register value */
+  OE_tc_SCU_CCUCON1_bits  bits; /**< the bits of the SCU Clk Control Reg 1 */
+} OE_tc_SCU_CCUCON1;
 
 /** \brief  SCU Clock Control Register 1 */
-#define OSEE_TC_SCU_CCUCON1\
-  (*(OSEE_tc_SCU_CCUCON1 volatile *)\
-    OSEE_TC_SCU_REG_ADDR(OSEE_TC_SCU_CCUCON1_OFF)\
+#define OE_TC_SCU_CCUCON1\
+  (*(OE_tc_SCU_CCUCON1 volatile *)\
+    OE_TC_SCU_REG_ADDR(OE_TC_SCU_CCUCON1_OFF)\
   )
 
 /**
@@ -1700,57 +1700,57 @@ typedef union {
  *  
  *  \return Returns fSOURCE in HZ.
  */
-OSEE_reg OSEE_tc_get_fsource(void);
+OE_reg OE_tc_get_fsource(void);
 
 /** Initialization of the clock control registers */
-#if (!defined(OSEE_TC_2G))
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE OSEE_tc_conf_clock_ctrl(void) {
+#if (!defined(OE_TC_2G))
+OE_STATIC_INLINE void OE_ALWAYS_INLINE OE_tc_conf_clock_ctrl(void) {
 /* N.B The following initialization order is not casual */
 /* Core Divisors */
-#if (defined(OSEE_TC_SCU_CCUCON6_INIT))
-  OSEE_TC_SCU_REG(OSEE_TC_SCU_CCUCON6_OFF) = OSEE_TC_SCU_CCUCON6_INIT;
-#endif /* OSEE_TC_SCU_CCUCON6_INIT */
-#if (defined(OSEE_TC_SCU_CCUCON7_INIT))
-  OSEE_TC_SCU_REG(OSEE_TC_SCU_CCUCON7_OFF) = OSEE_TC_SCU_CCUCON7_INIT;
-#endif /* OSEE_TC_SCU_CCUCON7_INIT */
-#if (defined(OSEE_TC_SCU_CCUCON8_INIT))
-  OSEE_TC_SCU_REG(OSEE_TC_SCU_CCUCON8_OFF) = OSEE_TC_SCU_CCUCON8_INIT;
-#endif /* OSEE_TC_SCU_CCUCON8_INIT */
+#if (defined(OE_TC_SCU_CCUCON6_INIT))
+  OE_TC_SCU_REG(OE_TC_SCU_CCUCON6_OFF) = OE_TC_SCU_CCUCON6_INIT;
+#endif /* OE_TC_SCU_CCUCON6_INIT */
+#if (defined(OE_TC_SCU_CCUCON7_INIT))
+  OE_TC_SCU_REG(OE_TC_SCU_CCUCON7_OFF) = OE_TC_SCU_CCUCON7_INIT;
+#endif /* OE_TC_SCU_CCUCON7_INIT */
+#if (defined(OE_TC_SCU_CCUCON8_INIT))
+  OE_TC_SCU_REG(OE_TC_SCU_CCUCON8_OFF) = OE_TC_SCU_CCUCON8_INIT;
+#endif /* OE_TC_SCU_CCUCON8_INIT */
 
 /* BUS Divisors */
 /* Configure CCUCON0 */
-  OSEE_TC_SCU_CCUCON0.reg = OSEE_TC_SCU_CCUCON0_INIT;
-#if (defined(OSEE_TC_SCU_CCUCON5_INIT))
-  OSEE_TC_SCU_REG(OSEE_TC_SCU_CCUCON5_OFF) = OSEE_TC_SCU_CCUCON5_INIT;
-#endif /* OSEE_TC_SCU_CCUCON5_INIT */
+  OE_TC_SCU_CCUCON0.reg = OE_TC_SCU_CCUCON0_INIT;
+#if (defined(OE_TC_SCU_CCUCON5_INIT))
+  OE_TC_SCU_REG(OE_TC_SCU_CCUCON5_OFF) = OE_TC_SCU_CCUCON5_INIT;
+#endif /* OE_TC_SCU_CCUCON5_INIT */
 /* Configure CCUCON1 and Update CCU 0, 1 & 5. Forced INSEL to 1 even for
    external configuration, otherwise PLL initialization won't work. */
-  OSEE_TC_SCU_CCUCON1.reg = OSEE_TC_SCU_CCUCON1_INIT |
-    OSEE_TC_SCU_CCUCON1_INSEL(1U) | OSEE_TC_SCU_CCUCONX_UP;
+  OE_TC_SCU_CCUCON1.reg = OE_TC_SCU_CCUCON1_INIT |
+    OE_TC_SCU_CCUCON1_INSEL(1U) | OE_TC_SCU_CCUCONX_UP;
 
-#if (defined(OSEE_TC_SCU_CCUCON2_INIT))
+#if (defined(OE_TC_SCU_CCUCON2_INIT))
   /* CCU2 has it's own update bit */
-  OSEE_TC_SCU_REG(OSEE_TC_SCU_CCUCON2_OFF) =
-    OSEE_TC_SCU_CCUCON2_INIT | OSEE_TC_SCU_CCUCONX_UP;
-#endif /* OSEE_TC_SCU_CCUCON2_INIT */
+  OE_TC_SCU_REG(OE_TC_SCU_CCUCON2_OFF) =
+    OE_TC_SCU_CCUCON2_INIT | OE_TC_SCU_CCUCONX_UP;
+#endif /* OE_TC_SCU_CCUCON2_INIT */
 }
 
 /** Initialization of the osclillators */
-OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE OSEE_tc_conf_osc_ctrl(void)
+OE_STATIC_INLINE void OE_ALWAYS_INLINE OE_tc_conf_osc_ctrl(void)
 {
   /*
    * Default System Oscillator Configuration
    * MODE:    0   -> External Crystal
    */
-  OSEE_TC_SCU_OSCCON.reg = OSEE_TC_SCU_OSCCON_OSCRES |
-    OSEE_TC_SCU_OSCCON_GAINSEL | OSEE_TC_SCU_OSCCON_MODE(0U) |
-    OSEE_TC_SCU_OSCCON_OSCVAL((OSEE_TC_BOARD_FOSC / 2500000U) - 1U);
+  OE_TC_SCU_OSCCON.reg = OE_TC_SCU_OSCCON_OSCRES |
+    OE_TC_SCU_OSCCON_GAINSEL | OE_TC_SCU_OSCCON_MODE(0U) |
+    OE_TC_SCU_OSCCON_OSCVAL((OE_TC_BOARD_FOSC / 2500000U) - 1U);
 
-  while (OSEE_TC_SCU_OSCCON.bits.plllv == 0U) {
+  while (OE_TC_SCU_OSCCON.bits.plllv == 0U) {
     ; /* Oscillator not too low */
   }
 
-  while (OSEE_TC_SCU_OSCCON.bits.pllhv == 0U) {
+  while (OE_TC_SCU_OSCCON.bits.pllhv == 0U) {
     ; /* Oscillator not too high */
   }
 }
@@ -1760,15 +1760,15 @@ OSEE_STATIC_INLINE void OSEE_ALWAYS_INLINE OSEE_tc_conf_osc_ctrl(void)
  *  
  *  \param [in] fpll frequency in Hz
  */
-void OSEE_tc_set_pll_fsource(OSEE_reg fpll);
+void OE_tc_set_pll_fsource(OE_reg fpll);
 
 /** \brief Macro to get the STM divider */
-#define OSEE_SCU_HW_FSTM_DIV (OSEE_TC_SCU_CCUCON1.bits.stmdiv)
+#define OE_SCU_HW_FSTM_DIV (OE_TC_SCU_CCUCON1.bits.stmdiv)
 
 #else
 
 /** \brief Macro to get the STM divider */
-#define OSEE_SCU_HW_FSTM_DIV (OSEE_TC_SCU_CCUCON0.bits.stmdiv)
+#define OE_SCU_HW_FSTM_DIV (OE_TC_SCU_CCUCON0.bits.stmdiv)
 
 /** \brief Structure definition for the BMHD
  *    Based on BMI and start address respective CRC and Inverted CRC values has
@@ -1809,11 +1809,11 @@ typedef struct
   uint32_t  reserved1[52];
 /** \brief 0x1F0: 32-bit CODE, (always same)*/
   uint32_t  confirmation;
-} OSEE_tc_ssw_bmhd;
-#endif /* !OSEE_TC_2G */
+} OE_tc_ssw_bmhd;
+#endif /* !OE_TC_2G */
 
 #if (defined(__cplusplus))
 }
 #endif
 
-#endif /* OSEE_TC_SYSTEM_H */
+#endif /* OE_TC_SYSTEM_H */

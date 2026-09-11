@@ -17,13 +17,13 @@
 #define USTACK_TC0 4k
 #endif /* !USTACK_TC0 */
 
-#if (defined(OSEE_TC_LINK_BMHD))
+#if (defined(OE_TC_LINK_BMHD))
 /* We declare that we want generate and link the Boot Mode Headers */
 #define __BMHD0_CONFIG  __BMHD_GENERATE
 #define __BMHD1_CONFIG  __BMHD_GENERATE
 #define __BMHD2_CONFIG  __BMHD_GENERATE
 #define __BMHD3_CONFIG  __BMHD_GENERATE
-#endif /* OSEE_TC_LINK_BMHD */
+#endif /* OE_TC_LINK_BMHD */
 
 #if defined(__PROC_TC39X__)
 #include "tc39x.lsl"

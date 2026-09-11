@@ -28,1149 +28,1149 @@
 
 
 /** \file   oe_tc_srch.h
- *  \brief  Contains the OSEE_TC_SRC registers offset definition for tc23x.
+ *  \brief  Contains the OE_TC_SRC registers offset definition for tc23x.
  *  \author Errico Guidieri
  *  \date   2017
  */
-#ifndef OSEE_TC_SRC_H
-#define OSEE_TC_SRC_H
+#ifndef OE_TC_SRC_H
+#define OE_TC_SRC_H
 
 /** \brief  88, ASCLIN Error Service Request */
-#define OSEE_TC_SRC_ASCLIN_ASCLIN0_ERR    (0x0088U)
+#define OE_TC_SRC_ASCLIN_ASCLIN0_ERR    (0x0088U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_ASCLIN_ASCLIN0_ERR.
- * To use register names with standard convention, please use OSEE_TC_SRC_ASCLIN_ASCLIN0_ERR.
+/** Alias (User Manual Name) for OE_TC_SRC_ASCLIN_ASCLIN0_ERR.
+ * To use register names with standard convention, please use OE_TC_SRC_ASCLIN_ASCLIN0_ERR.
  */
-#define OSEE_TC_SRC_ASCLIN0ERR            (OSEE_TC_SRC_ASCLIN_ASCLIN0_ERR)
+#define OE_TC_SRC_ASCLIN0ERR            (OE_TC_SRC_ASCLIN_ASCLIN0_ERR)
 
 /** \brief  84, ASCLIN Receive Service Request */
-#define OSEE_TC_SRC_ASCLIN_ASCLIN0_RX     (0x0084U)
+#define OE_TC_SRC_ASCLIN_ASCLIN0_RX     (0x0084U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_ASCLIN_ASCLIN0_RX.
- * To use register names with standard convention, please use OSEE_TC_SRC_ASCLIN_ASCLIN0_RX.
+/** Alias (User Manual Name) for OE_TC_SRC_ASCLIN_ASCLIN0_RX.
+ * To use register names with standard convention, please use OE_TC_SRC_ASCLIN_ASCLIN0_RX.
  */
-#define OSEE_TC_SRC_ASCLIN0RX             (OSEE_TC_SRC_ASCLIN_ASCLIN0_RX)
+#define OE_TC_SRC_ASCLIN0RX             (OE_TC_SRC_ASCLIN_ASCLIN0_RX)
 
 /** \brief  80, ASCLIN Transmit Service Request */
-#define OSEE_TC_SRC_ASCLIN_ASCLIN0_TX     (0x0080U)
+#define OE_TC_SRC_ASCLIN_ASCLIN0_TX     (0x0080U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_ASCLIN_ASCLIN0_TX.
- * To use register names with standard convention, please use OSEE_TC_SRC_ASCLIN_ASCLIN0_TX.
+/** Alias (User Manual Name) for OE_TC_SRC_ASCLIN_ASCLIN0_TX.
+ * To use register names with standard convention, please use OE_TC_SRC_ASCLIN_ASCLIN0_TX.
  */
-#define OSEE_TC_SRC_ASCLIN0TX             (OSEE_TC_SRC_ASCLIN_ASCLIN0_TX)
+#define OE_TC_SRC_ASCLIN0TX             (OE_TC_SRC_ASCLIN_ASCLIN0_TX)
 
 /** \brief  94, ASCLIN Error Service Request */
-#define OSEE_TC_SRC_ASCLIN_ASCLIN1_ERR    (0x0094U)
+#define OE_TC_SRC_ASCLIN_ASCLIN1_ERR    (0x0094U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_ASCLIN_ASCLIN1_ERR.
- * To use register names with standard convention, please use OSEE_TC_SRC_ASCLIN_ASCLIN1_ERR.
+/** Alias (User Manual Name) for OE_TC_SRC_ASCLIN_ASCLIN1_ERR.
+ * To use register names with standard convention, please use OE_TC_SRC_ASCLIN_ASCLIN1_ERR.
  */
-#define OSEE_TC_SRC_ASCLIN1ERR            (OSEE_TC_SRC_ASCLIN_ASCLIN1_ERR)
+#define OE_TC_SRC_ASCLIN1ERR            (OE_TC_SRC_ASCLIN_ASCLIN1_ERR)
 
 /** \brief  90, ASCLIN Receive Service Request */
-#define OSEE_TC_SRC_ASCLIN_ASCLIN1_RX     (0x0090U)
+#define OE_TC_SRC_ASCLIN_ASCLIN1_RX     (0x0090U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_ASCLIN_ASCLIN1_RX.
- * To use register names with standard convention, please use OSEE_TC_SRC_ASCLIN_ASCLIN1_RX.
+/** Alias (User Manual Name) for OE_TC_SRC_ASCLIN_ASCLIN1_RX.
+ * To use register names with standard convention, please use OE_TC_SRC_ASCLIN_ASCLIN1_RX.
  */
-#define OSEE_TC_SRC_ASCLIN1RX             (OSEE_TC_SRC_ASCLIN_ASCLIN1_RX)
+#define OE_TC_SRC_ASCLIN1RX             (OE_TC_SRC_ASCLIN_ASCLIN1_RX)
 
 /** \brief  8C, ASCLIN Transmit Service Request */
-#define OSEE_TC_SRC_ASCLIN_ASCLIN1_TX     (0x008CU)
+#define OE_TC_SRC_ASCLIN_ASCLIN1_TX     (0x008CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_ASCLIN_ASCLIN1_TX.
- * To use register names with standard convention, please use OSEE_TC_SRC_ASCLIN_ASCLIN1_TX.
+/** Alias (User Manual Name) for OE_TC_SRC_ASCLIN_ASCLIN1_TX.
+ * To use register names with standard convention, please use OE_TC_SRC_ASCLIN_ASCLIN1_TX.
  */
-#define OSEE_TC_SRC_ASCLIN1TX             (OSEE_TC_SRC_ASCLIN_ASCLIN1_TX)
+#define OE_TC_SRC_ASCLIN1TX             (OE_TC_SRC_ASCLIN_ASCLIN1_TX)
 
 /** \brief  40, Bus Control Unit SPB Service Request */
-#define OSEE_TC_SRC_BCU_SPB_SBSRC         (0x0040U)
+#define OE_TC_SRC_BCU_SPB_SBSRC         (0x0040U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_BCU_SPB_SBSRC.
- * To use register names with standard convention, please use OSEE_TC_SRC_BCU_SPB_SBSRC.
+/** Alias (User Manual Name) for OE_TC_SRC_BCU_SPB_SBSRC.
+ * To use register names with standard convention, please use OE_TC_SRC_BCU_SPB_SBSRC.
  */
-#define OSEE_TC_SRC_BCUSPBSBSRC           (OSEE_TC_SRC_BCU_SPB_SBSRC)
+#define OE_TC_SRC_BCUSPBSBSRC           (OE_TC_SRC_BCU_SPB_SBSRC)
 
 /** \brief  900, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT0         (0x0900U)
+#define OE_TC_SRC_CAN_CAN0_INT0         (0x0900U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT0.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT0.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT0.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT0.
  */
-#define OSEE_TC_SRC_CANINT0               (OSEE_TC_SRC_CAN_CAN0_INT0)
+#define OE_TC_SRC_CANINT0               (OE_TC_SRC_CAN_CAN0_INT0)
 
 /** \brief  904, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT1         (0x0904U)
+#define OE_TC_SRC_CAN_CAN0_INT1         (0x0904U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT1.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT1.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT1.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT1.
  */
-#define OSEE_TC_SRC_CANINT1               (OSEE_TC_SRC_CAN_CAN0_INT1)
+#define OE_TC_SRC_CANINT1               (OE_TC_SRC_CAN_CAN0_INT1)
 
 /** \brief  928, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT10        (0x0928U)
+#define OE_TC_SRC_CAN_CAN0_INT10        (0x0928U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT10.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT10.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT10.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT10.
  */
-#define OSEE_TC_SRC_CANINT10              (OSEE_TC_SRC_CAN_CAN0_INT10)
+#define OE_TC_SRC_CANINT10              (OE_TC_SRC_CAN_CAN0_INT10)
 
 /** \brief  92C, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT11        (0x092CU)
+#define OE_TC_SRC_CAN_CAN0_INT11        (0x092CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT11.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT11.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT11.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT11.
  */
-#define OSEE_TC_SRC_CANINT11              (OSEE_TC_SRC_CAN_CAN0_INT11)
+#define OE_TC_SRC_CANINT11              (OE_TC_SRC_CAN_CAN0_INT11)
 
 /** \brief  930, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT12        (0x0930U)
+#define OE_TC_SRC_CAN_CAN0_INT12        (0x0930U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT12.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT12.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT12.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT12.
  */
-#define OSEE_TC_SRC_CANINT12              (OSEE_TC_SRC_CAN_CAN0_INT12)
+#define OE_TC_SRC_CANINT12              (OE_TC_SRC_CAN_CAN0_INT12)
 
 /** \brief  934, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT13        (0x0934U)
+#define OE_TC_SRC_CAN_CAN0_INT13        (0x0934U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT13.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT13.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT13.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT13.
  */
-#define OSEE_TC_SRC_CANINT13              (OSEE_TC_SRC_CAN_CAN0_INT13)
+#define OE_TC_SRC_CANINT13              (OE_TC_SRC_CAN_CAN0_INT13)
 
 /** \brief  938, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT14        (0x0938U)
+#define OE_TC_SRC_CAN_CAN0_INT14        (0x0938U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT14.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT14.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT14.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT14.
  */
-#define OSEE_TC_SRC_CANINT14              (OSEE_TC_SRC_CAN_CAN0_INT14)
+#define OE_TC_SRC_CANINT14              (OE_TC_SRC_CAN_CAN0_INT14)
 
 /** \brief  93C, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT15        (0x093CU)
+#define OE_TC_SRC_CAN_CAN0_INT15        (0x093CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT15.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT15.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT15.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT15.
  */
-#define OSEE_TC_SRC_CANINT15              (OSEE_TC_SRC_CAN_CAN0_INT15)
+#define OE_TC_SRC_CANINT15              (OE_TC_SRC_CAN_CAN0_INT15)
 
 /** \brief  908, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT2         (0x0908U)
+#define OE_TC_SRC_CAN_CAN0_INT2         (0x0908U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT2.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT2.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT2.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT2.
  */
-#define OSEE_TC_SRC_CANINT2               (OSEE_TC_SRC_CAN_CAN0_INT2)
+#define OE_TC_SRC_CANINT2               (OE_TC_SRC_CAN_CAN0_INT2)
 
 /** \brief  90C, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT3         (0x090CU)
+#define OE_TC_SRC_CAN_CAN0_INT3         (0x090CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT3.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT3.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT3.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT3.
  */
-#define OSEE_TC_SRC_CANINT3               (OSEE_TC_SRC_CAN_CAN0_INT3)
+#define OE_TC_SRC_CANINT3               (OE_TC_SRC_CAN_CAN0_INT3)
 
 /** \brief  910, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT4         (0x0910U)
+#define OE_TC_SRC_CAN_CAN0_INT4         (0x0910U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT4.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT4.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT4.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT4.
  */
-#define OSEE_TC_SRC_CANINT4               (OSEE_TC_SRC_CAN_CAN0_INT4)
+#define OE_TC_SRC_CANINT4               (OE_TC_SRC_CAN_CAN0_INT4)
 
 /** \brief  914, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT5         (0x0914U)
+#define OE_TC_SRC_CAN_CAN0_INT5         (0x0914U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT5.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT5.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT5.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT5.
  */
-#define OSEE_TC_SRC_CANINT5               (OSEE_TC_SRC_CAN_CAN0_INT5)
+#define OE_TC_SRC_CANINT5               (OE_TC_SRC_CAN_CAN0_INT5)
 
 /** \brief  918, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT6         (0x0918U)
+#define OE_TC_SRC_CAN_CAN0_INT6         (0x0918U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT6.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT6.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT6.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT6.
  */
-#define OSEE_TC_SRC_CANINT6               (OSEE_TC_SRC_CAN_CAN0_INT6)
+#define OE_TC_SRC_CANINT6               (OE_TC_SRC_CAN_CAN0_INT6)
 
 /** \brief  91C, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT7         (0x091CU)
+#define OE_TC_SRC_CAN_CAN0_INT7         (0x091CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT7.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT7.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT7.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT7.
  */
-#define OSEE_TC_SRC_CANINT7               (OSEE_TC_SRC_CAN_CAN0_INT7)
+#define OE_TC_SRC_CANINT7               (OE_TC_SRC_CAN_CAN0_INT7)
 
 /** \brief  920, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT8         (0x0920U)
+#define OE_TC_SRC_CAN_CAN0_INT8         (0x0920U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT8.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT8.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT8.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT8.
  */
-#define OSEE_TC_SRC_CANINT8               (OSEE_TC_SRC_CAN_CAN0_INT8)
+#define OE_TC_SRC_CANINT8               (OE_TC_SRC_CAN_CAN0_INT8)
 
 /** \brief  924, MULTICAN Service Request */
-#define OSEE_TC_SRC_CAN_CAN0_INT9         (0x0924U)
+#define OE_TC_SRC_CAN_CAN0_INT9         (0x0924U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CAN_CAN0_INT9.
- * To use register names with standard convention, please use OSEE_TC_SRC_CAN_CAN0_INT9.
+/** Alias (User Manual Name) for OE_TC_SRC_CAN_CAN0_INT9.
+ * To use register names with standard convention, please use OE_TC_SRC_CAN_CAN0_INT9.
  */
-#define OSEE_TC_SRC_CANINT9               (OSEE_TC_SRC_CAN_CAN0_INT9)
+#define OE_TC_SRC_CANINT9               (OE_TC_SRC_CAN_CAN0_INT9)
 
 /** \brief  420, CCU6 Service Request 0 */
-#define OSEE_TC_SRC_CCU6_CCU60_SR0        (0x0420U)
+#define OE_TC_SRC_CCU6_CCU60_SR0        (0x0420U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CCU6_CCU60_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_CCU6_CCU60_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_CCU6_CCU60_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_CCU6_CCU60_SR0.
  */
-#define OSEE_TC_SRC_CCU60SR0              (OSEE_TC_SRC_CCU6_CCU60_SR0)
+#define OE_TC_SRC_CCU60SR0              (OE_TC_SRC_CCU6_CCU60_SR0)
 
 /** \brief  424, CCU6 Service Request 1 */
-#define OSEE_TC_SRC_CCU6_CCU60_SR1        (0x0424U)
+#define OE_TC_SRC_CCU6_CCU60_SR1        (0x0424U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CCU6_CCU60_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_CCU6_CCU60_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_CCU6_CCU60_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_CCU6_CCU60_SR1.
  */
-#define OSEE_TC_SRC_CCU60SR1              (OSEE_TC_SRC_CCU6_CCU60_SR1)
+#define OE_TC_SRC_CCU60SR1              (OE_TC_SRC_CCU6_CCU60_SR1)
 
 /** \brief  428, CCU6 Service Request 2 */
-#define OSEE_TC_SRC_CCU6_CCU60_SR2        (0x0428U)
+#define OE_TC_SRC_CCU6_CCU60_SR2        (0x0428U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CCU6_CCU60_SR2.
- * To use register names with standard convention, please use OSEE_TC_SRC_CCU6_CCU60_SR2.
+/** Alias (User Manual Name) for OE_TC_SRC_CCU6_CCU60_SR2.
+ * To use register names with standard convention, please use OE_TC_SRC_CCU6_CCU60_SR2.
  */
-#define OSEE_TC_SRC_CCU60SR2              (OSEE_TC_SRC_CCU6_CCU60_SR2)
+#define OE_TC_SRC_CCU60SR2              (OE_TC_SRC_CCU6_CCU60_SR2)
 
 /** \brief  42C, CCU6 Service Request 3 */
-#define OSEE_TC_SRC_CCU6_CCU60_SR3        (0x042CU)
+#define OE_TC_SRC_CCU6_CCU60_SR3        (0x042CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CCU6_CCU60_SR3.
- * To use register names with standard convention, please use OSEE_TC_SRC_CCU6_CCU60_SR3.
+/** Alias (User Manual Name) for OE_TC_SRC_CCU6_CCU60_SR3.
+ * To use register names with standard convention, please use OE_TC_SRC_CCU6_CCU60_SR3.
  */
-#define OSEE_TC_SRC_CCU60SR3              (OSEE_TC_SRC_CCU6_CCU60_SR3)
+#define OE_TC_SRC_CCU60SR3              (OE_TC_SRC_CCU6_CCU60_SR3)
 
 /** \brief  430, CCU6 Service Request 0 */
-#define OSEE_TC_SRC_CCU6_CCU61_SR0        (0x0430U)
+#define OE_TC_SRC_CCU6_CCU61_SR0        (0x0430U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CCU6_CCU61_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_CCU6_CCU61_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_CCU6_CCU61_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_CCU6_CCU61_SR0.
  */
-#define OSEE_TC_SRC_CCU61SR0              (OSEE_TC_SRC_CCU6_CCU61_SR0)
+#define OE_TC_SRC_CCU61SR0              (OE_TC_SRC_CCU6_CCU61_SR0)
 
 /** \brief  434, CCU6 Service Request 1 */
-#define OSEE_TC_SRC_CCU6_CCU61_SR1        (0x0434U)
+#define OE_TC_SRC_CCU6_CCU61_SR1        (0x0434U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CCU6_CCU61_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_CCU6_CCU61_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_CCU6_CCU61_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_CCU6_CCU61_SR1.
  */
-#define OSEE_TC_SRC_CCU61SR1              (OSEE_TC_SRC_CCU6_CCU61_SR1)
+#define OE_TC_SRC_CCU61SR1              (OE_TC_SRC_CCU6_CCU61_SR1)
 
 /** \brief  438, CCU6 Service Request 2 */
-#define OSEE_TC_SRC_CCU6_CCU61_SR2        (0x0438U)
+#define OE_TC_SRC_CCU6_CCU61_SR2        (0x0438U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CCU6_CCU61_SR2.
- * To use register names with standard convention, please use OSEE_TC_SRC_CCU6_CCU61_SR2.
+/** Alias (User Manual Name) for OE_TC_SRC_CCU6_CCU61_SR2.
+ * To use register names with standard convention, please use OE_TC_SRC_CCU6_CCU61_SR2.
  */
-#define OSEE_TC_SRC_CCU61SR2              (OSEE_TC_SRC_CCU6_CCU61_SR2)
+#define OE_TC_SRC_CCU61SR2              (OE_TC_SRC_CCU6_CCU61_SR2)
 
 /** \brief  43C, CCU6 Service Request 3 */
-#define OSEE_TC_SRC_CCU6_CCU61_SR3        (0x043CU)
+#define OE_TC_SRC_CCU6_CCU61_SR3        (0x043CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CCU6_CCU61_SR3.
- * To use register names with standard convention, please use OSEE_TC_SRC_CCU6_CCU61_SR3.
+/** Alias (User Manual Name) for OE_TC_SRC_CCU6_CCU61_SR3.
+ * To use register names with standard convention, please use OE_TC_SRC_CCU6_CCU61_SR3.
  */
-#define OSEE_TC_SRC_CCU61SR3              (OSEE_TC_SRC_CCU6_CCU61_SR3)
+#define OE_TC_SRC_CCU61SR3              (OE_TC_SRC_CCU6_CCU61_SR3)
 
 /** \brief  50, Cerberus Service Request */
-#define OSEE_TC_SRC_CERBERUS_CERBERUS_SR0 (0x0050U)
+#define OE_TC_SRC_CERBERUS_CERBERUS_SR0 (0x0050U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CERBERUS_CERBERUS_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_CERBERUS_CERBERUS_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_CERBERUS_CERBERUS_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_CERBERUS_CERBERUS_SR0.
  */
-#define OSEE_TC_SRC_CERBERUS0             (OSEE_TC_SRC_CERBERUS_CERBERUS_SR0)
+#define OE_TC_SRC_CERBERUS0             (OE_TC_SRC_CERBERUS_CERBERUS_SR0)
 
 /** \brief  54, Cerberus Service Request */
-#define OSEE_TC_SRC_CERBERUS_CERBERUS_SR1 (0x0054U)
+#define OE_TC_SRC_CERBERUS_CERBERUS_SR1 (0x0054U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CERBERUS_CERBERUS_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_CERBERUS_CERBERUS_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_CERBERUS_CERBERUS_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_CERBERUS_CERBERUS_SR1.
  */
-#define OSEE_TC_SRC_CERBERUS1             (OSEE_TC_SRC_CERBERUS_CERBERUS_SR1)
+#define OE_TC_SRC_CERBERUS1             (OE_TC_SRC_CERBERUS_CERBERUS_SR1)
 
 /** \brief  0, CPUSoftware Breakpoint Service Request */
-#define OSEE_TC_SRC_CPU_CPU0_SBSRC        (0x0000U)
+#define OE_TC_SRC_CPU_CPU0_SBSRC        (0x0000U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_CPU_CPU0_SBSRC.
- * To use register names with standard convention, please use OSEE_TC_SRC_CPU_CPU0_SBSRC.
+/** Alias (User Manual Name) for OE_TC_SRC_CPU_CPU0_SBSRC.
+ * To use register names with standard convention, please use OE_TC_SRC_CPU_CPU0_SBSRC.
  */
-#define OSEE_TC_SRC_CPU0SBSRC             (OSEE_TC_SRC_CPU_CPU0_SBSRC)
+#define OE_TC_SRC_CPU0SBSRC             (OE_TC_SRC_CPU_CPU0_SBSRC)
 
 /** \brief  500, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH0          (0x0500U)
+#define OE_TC_SRC_DMA_DMA0_CH0          (0x0500U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH0.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH0.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH0.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH0.
  */
-#define OSEE_TC_SRC_DMACH0                (OSEE_TC_SRC_DMA_DMA0_CH0)
+#define OE_TC_SRC_DMACH0                (OE_TC_SRC_DMA_DMA0_CH0)
 
 /** \brief  504, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH1          (0x0504U)
+#define OE_TC_SRC_DMA_DMA0_CH1          (0x0504U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH1.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH1.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH1.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH1.
  */
-#define OSEE_TC_SRC_DMACH1                (OSEE_TC_SRC_DMA_DMA0_CH1)
+#define OE_TC_SRC_DMACH1                (OE_TC_SRC_DMA_DMA0_CH1)
 
 /** \brief  528, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH10         (0x0528U)
+#define OE_TC_SRC_DMA_DMA0_CH10         (0x0528U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH10.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH10.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH10.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH10.
  */
-#define OSEE_TC_SRC_DMACH10               (OSEE_TC_SRC_DMA_DMA0_CH10)
+#define OE_TC_SRC_DMACH10               (OE_TC_SRC_DMA_DMA0_CH10)
 
 /** \brief  52C, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH11         (0x052CU)
+#define OE_TC_SRC_DMA_DMA0_CH11         (0x052CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH11.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH11.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH11.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH11.
  */
-#define OSEE_TC_SRC_DMACH11               (OSEE_TC_SRC_DMA_DMA0_CH11)
+#define OE_TC_SRC_DMACH11               (OE_TC_SRC_DMA_DMA0_CH11)
 
 /** \brief  530, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH12         (0x0530U)
+#define OE_TC_SRC_DMA_DMA0_CH12         (0x0530U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH12.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH12.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH12.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH12.
  */
-#define OSEE_TC_SRC_DMACH12               (OSEE_TC_SRC_DMA_DMA0_CH12)
+#define OE_TC_SRC_DMACH12               (OE_TC_SRC_DMA_DMA0_CH12)
 
 /** \brief  534, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH13         (0x0534U)
+#define OE_TC_SRC_DMA_DMA0_CH13         (0x0534U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH13.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH13.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH13.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH13.
  */
-#define OSEE_TC_SRC_DMACH13               (OSEE_TC_SRC_DMA_DMA0_CH13)
+#define OE_TC_SRC_DMACH13               (OE_TC_SRC_DMA_DMA0_CH13)
 
 /** \brief  538, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH14         (0x0538U)
+#define OE_TC_SRC_DMA_DMA0_CH14         (0x0538U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH14.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH14.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH14.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH14.
  */
-#define OSEE_TC_SRC_DMACH14               (OSEE_TC_SRC_DMA_DMA0_CH14)
+#define OE_TC_SRC_DMACH14               (OE_TC_SRC_DMA_DMA0_CH14)
 
 /** \brief  53C, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH15         (0x053CU)
+#define OE_TC_SRC_DMA_DMA0_CH15         (0x053CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH15.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH15.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH15.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH15.
  */
-#define OSEE_TC_SRC_DMACH15               (OSEE_TC_SRC_DMA_DMA0_CH15)
+#define OE_TC_SRC_DMACH15               (OE_TC_SRC_DMA_DMA0_CH15)
 
 /** \brief  508, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH2          (0x0508U)
+#define OE_TC_SRC_DMA_DMA0_CH2          (0x0508U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH2.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH2.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH2.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH2.
  */
-#define OSEE_TC_SRC_DMACH2                (OSEE_TC_SRC_DMA_DMA0_CH2)
+#define OE_TC_SRC_DMACH2                (OE_TC_SRC_DMA_DMA0_CH2)
 
 /** \brief  50C, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH3          (0x050CU)
+#define OE_TC_SRC_DMA_DMA0_CH3          (0x050CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH3.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH3.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH3.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH3.
  */
-#define OSEE_TC_SRC_DMACH3                (OSEE_TC_SRC_DMA_DMA0_CH3)
+#define OE_TC_SRC_DMACH3                (OE_TC_SRC_DMA_DMA0_CH3)
 
 /** \brief  510, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH4          (0x0510U)
+#define OE_TC_SRC_DMA_DMA0_CH4          (0x0510U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH4.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH4.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH4.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH4.
  */
-#define OSEE_TC_SRC_DMACH4                (OSEE_TC_SRC_DMA_DMA0_CH4)
+#define OE_TC_SRC_DMACH4                (OE_TC_SRC_DMA_DMA0_CH4)
 
 /** \brief  514, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH5          (0x0514U)
+#define OE_TC_SRC_DMA_DMA0_CH5          (0x0514U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH5.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH5.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH5.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH5.
  */
-#define OSEE_TC_SRC_DMACH5                (OSEE_TC_SRC_DMA_DMA0_CH5)
+#define OE_TC_SRC_DMACH5                (OE_TC_SRC_DMA_DMA0_CH5)
 
 /** \brief  518, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH6          (0x0518U)
+#define OE_TC_SRC_DMA_DMA0_CH6          (0x0518U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH6.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH6.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH6.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH6.
  */
-#define OSEE_TC_SRC_DMACH6                (OSEE_TC_SRC_DMA_DMA0_CH6)
+#define OE_TC_SRC_DMACH6                (OE_TC_SRC_DMA_DMA0_CH6)
 
 /** \brief  51C, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH7          (0x051CU)
+#define OE_TC_SRC_DMA_DMA0_CH7          (0x051CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH7.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH7.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH7.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH7.
  */
-#define OSEE_TC_SRC_DMACH7                (OSEE_TC_SRC_DMA_DMA0_CH7)
+#define OE_TC_SRC_DMACH7                (OE_TC_SRC_DMA_DMA0_CH7)
 
 /** \brief  520, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH8          (0x0520U)
+#define OE_TC_SRC_DMA_DMA0_CH8          (0x0520U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH8.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH8.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH8.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH8.
  */
-#define OSEE_TC_SRC_DMACH8                (OSEE_TC_SRC_DMA_DMA0_CH8)
+#define OE_TC_SRC_DMACH8                (OE_TC_SRC_DMA_DMA0_CH8)
 
 /** \brief  524, DMA Channel Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_CH9          (0x0524U)
+#define OE_TC_SRC_DMA_DMA0_CH9          (0x0524U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_CH9.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_CH9.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_CH9.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_CH9.
  */
-#define OSEE_TC_SRC_DMACH9                (OSEE_TC_SRC_DMA_DMA0_CH9)
+#define OE_TC_SRC_DMACH9                (OE_TC_SRC_DMA_DMA0_CH9)
 
 /** \brief  4F0, DMA Error Service Request */
-#define OSEE_TC_SRC_DMA_DMA0_ERR          (0x04F0U)
+#define OE_TC_SRC_DMA_DMA0_ERR          (0x04F0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_DMA_DMA0_ERR.
- * To use register names with standard convention, please use OSEE_TC_SRC_DMA_DMA0_ERR.
+/** Alias (User Manual Name) for OE_TC_SRC_DMA_DMA0_ERR.
+ * To use register names with standard convention, please use OE_TC_SRC_DMA_DMA0_ERR.
  */
-#define OSEE_TC_SRC_DMAERR                (OSEE_TC_SRC_DMA_DMA0_ERR)
+#define OE_TC_SRC_DMAERR                (OE_TC_SRC_DMA_DMA0_ERR)
 
 /** \brief  FB4, EVR Supply Service Request */
-#define OSEE_TC_SRC_EVR_EVR0_SCDC         (0x0FB4U)
+#define OE_TC_SRC_EVR_EVR0_SCDC         (0x0FB4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_EVR_EVR0_SCDC.
- * To use register names with standard convention, please use OSEE_TC_SRC_EVR_EVR0_SCDC.
+/** Alias (User Manual Name) for OE_TC_SRC_EVR_EVR0_SCDC.
+ * To use register names with standard convention, please use OE_TC_SRC_EVR_EVR0_SCDC.
  */
-#define OSEE_TC_SRC_EVRSCDC               (OSEE_TC_SRC_EVR_EVR0_SCDC)
+#define OE_TC_SRC_EVRSCDC               (OE_TC_SRC_EVR_EVR0_SCDC)
 
 /** \brief  FB0, EVR Wake Up Timer Service Request */
-#define OSEE_TC_SRC_EVR_EVR0_WUT          (0x0FB0U)
+#define OE_TC_SRC_EVR_EVR0_WUT          (0x0FB0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_EVR_EVR0_WUT.
- * To use register names with standard convention, please use OSEE_TC_SRC_EVR_EVR0_WUT.
+/** Alias (User Manual Name) for OE_TC_SRC_EVR_EVR0_WUT.
+ * To use register names with standard convention, please use OE_TC_SRC_EVR_EVR0_WUT.
  */
-#define OSEE_TC_SRC_EVRWUT                (OSEE_TC_SRC_EVR_EVR0_WUT)
+#define OE_TC_SRC_EVRWUT                (OE_TC_SRC_EVR_EVR0_WUT)
 
 /** \brief  1000, General Purpose Service Request 0 */
-#define OSEE_TC_SRC_GPSR_GPSR0_SR0        (0x1000U)
+#define OE_TC_SRC_GPSR_GPSR0_SR0        (0x1000U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPSR_GPSR0_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPSR_GPSR0_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_GPSR_GPSR0_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_GPSR_GPSR0_SR0.
  */
-#define OSEE_TC_SRC_GPSR00                (OSEE_TC_SRC_GPSR_GPSR0_SR0)
+#define OE_TC_SRC_GPSR00                (OE_TC_SRC_GPSR_GPSR0_SR0)
 
 /** \brief  1004, General Purpose Service Request 1 */
-#define OSEE_TC_SRC_GPSR_GPSR0_SR1        (0x1004U)
+#define OE_TC_SRC_GPSR_GPSR0_SR1        (0x1004U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPSR_GPSR0_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPSR_GPSR0_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_GPSR_GPSR0_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_GPSR_GPSR0_SR1.
  */
-#define OSEE_TC_SRC_GPSR01                (OSEE_TC_SRC_GPSR_GPSR0_SR1)
+#define OE_TC_SRC_GPSR01                (OE_TC_SRC_GPSR_GPSR0_SR1)
 
 /** \brief  1008, General Purpose Service Request 2 */
-#define OSEE_TC_SRC_GPSR_GPSR0_SR2        (0x1008U)
+#define OE_TC_SRC_GPSR_GPSR0_SR2        (0x1008U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPSR_GPSR0_SR2.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPSR_GPSR0_SR2.
+/** Alias (User Manual Name) for OE_TC_SRC_GPSR_GPSR0_SR2.
+ * To use register names with standard convention, please use OE_TC_SRC_GPSR_GPSR0_SR2.
  */
-#define OSEE_TC_SRC_GPSR02                (OSEE_TC_SRC_GPSR_GPSR0_SR2)
+#define OE_TC_SRC_GPSR02                (OE_TC_SRC_GPSR_GPSR0_SR2)
 
 /** \brief  100C, General Purpose Service Request 3 */
-#define OSEE_TC_SRC_GPSR_GPSR0_SR3        (0x100CU)
+#define OE_TC_SRC_GPSR_GPSR0_SR3        (0x100CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPSR_GPSR0_SR3.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPSR_GPSR0_SR3.
+/** Alias (User Manual Name) for OE_TC_SRC_GPSR_GPSR0_SR3.
+ * To use register names with standard convention, please use OE_TC_SRC_GPSR_GPSR0_SR3.
  */
-#define OSEE_TC_SRC_GPSR03                (OSEE_TC_SRC_GPSR_GPSR0_SR3)
+#define OE_TC_SRC_GPSR03                (OE_TC_SRC_GPSR_GPSR0_SR3)
 
 /** \brief  460, GPT12 CAPREL Service Request */
-#define OSEE_TC_SRC_GPT12_GPT120_CIRQ     (0x0460U)
+#define OE_TC_SRC_GPT12_GPT120_CIRQ     (0x0460U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPT12_GPT120_CIRQ.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPT12_GPT120_CIRQ.
+/** Alias (User Manual Name) for OE_TC_SRC_GPT12_GPT120_CIRQ.
+ * To use register names with standard convention, please use OE_TC_SRC_GPT12_GPT120_CIRQ.
  */
-#define OSEE_TC_SRC_GPT120CIRQ            (OSEE_TC_SRC_GPT12_GPT120_CIRQ)
+#define OE_TC_SRC_GPT120CIRQ            (OE_TC_SRC_GPT12_GPT120_CIRQ)
 
 /** \brief  464, GPT12 T2 Overflow/Underflow Service Request */
-#define OSEE_TC_SRC_GPT12_GPT120_T2       (0x0464U)
+#define OE_TC_SRC_GPT12_GPT120_T2       (0x0464U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPT12_GPT120_T2.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPT12_GPT120_T2.
+/** Alias (User Manual Name) for OE_TC_SRC_GPT12_GPT120_T2.
+ * To use register names with standard convention, please use OE_TC_SRC_GPT12_GPT120_T2.
  */
-#define OSEE_TC_SRC_GPT120T2              (OSEE_TC_SRC_GPT12_GPT120_T2)
+#define OE_TC_SRC_GPT120T2              (OE_TC_SRC_GPT12_GPT120_T2)
 
 /** \brief  468, GPT12 T3 Overflow/Underflow Service Request */
-#define OSEE_TC_SRC_GPT12_GPT120_T3       (0x0468U)
+#define OE_TC_SRC_GPT12_GPT120_T3       (0x0468U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPT12_GPT120_T3.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPT12_GPT120_T3.
+/** Alias (User Manual Name) for OE_TC_SRC_GPT12_GPT120_T3.
+ * To use register names with standard convention, please use OE_TC_SRC_GPT12_GPT120_T3.
  */
-#define OSEE_TC_SRC_GPT120T3              (OSEE_TC_SRC_GPT12_GPT120_T3)
+#define OE_TC_SRC_GPT120T3              (OE_TC_SRC_GPT12_GPT120_T3)
 
 /** \brief  46C, GPT12 T4 Overflow/Underflow Service Request */
-#define OSEE_TC_SRC_GPT12_GPT120_T4       (0x046CU)
+#define OE_TC_SRC_GPT12_GPT120_T4       (0x046CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPT12_GPT120_T4.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPT12_GPT120_T4.
+/** Alias (User Manual Name) for OE_TC_SRC_GPT12_GPT120_T4.
+ * To use register names with standard convention, please use OE_TC_SRC_GPT12_GPT120_T4.
  */
-#define OSEE_TC_SRC_GPT120T4              (OSEE_TC_SRC_GPT12_GPT120_T4)
+#define OE_TC_SRC_GPT120T4              (OE_TC_SRC_GPT12_GPT120_T4)
 
 /** \brief  470, GPT12 T5 Overflow/Underflow Service Request */
-#define OSEE_TC_SRC_GPT12_GPT120_T5       (0x0470U)
+#define OE_TC_SRC_GPT12_GPT120_T5       (0x0470U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPT12_GPT120_T5.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPT12_GPT120_T5.
+/** Alias (User Manual Name) for OE_TC_SRC_GPT12_GPT120_T5.
+ * To use register names with standard convention, please use OE_TC_SRC_GPT12_GPT120_T5.
  */
-#define OSEE_TC_SRC_GPT120T5              (OSEE_TC_SRC_GPT12_GPT120_T5)
+#define OE_TC_SRC_GPT120T5              (OE_TC_SRC_GPT12_GPT120_T5)
 
 /** \brief  474, GPT12 T6 Overflow/Underflow Service Request */
-#define OSEE_TC_SRC_GPT12_GPT120_T6       (0x0474U)
+#define OE_TC_SRC_GPT12_GPT120_T6       (0x0474U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GPT12_GPT120_T6.
- * To use register names with standard convention, please use OSEE_TC_SRC_GPT12_GPT120_T6.
+/** Alias (User Manual Name) for OE_TC_SRC_GPT12_GPT120_T6.
+ * To use register names with standard convention, please use OE_TC_SRC_GPT12_GPT120_T6.
  */
-#define OSEE_TC_SRC_GPT120T6              (OSEE_TC_SRC_GPT12_GPT120_T6)
+#define OE_TC_SRC_GPT120T6              (OE_TC_SRC_GPT12_GPT120_T6)
 
 /** \brief  1600, GTM AEI Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_AEIIRQ       (0x1600U)
+#define OE_TC_SRC_GTM_GTM0_AEIIRQ       (0x1600U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_AEIIRQ.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_AEIIRQ.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_AEIIRQ.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_AEIIRQ.
  */
-#define OSEE_TC_SRC_GTMAEIIRQ             (OSEE_TC_SRC_GTM_GTM0_AEIIRQ)
+#define OE_TC_SRC_GTMAEIIRQ             (OE_TC_SRC_GTM_GTM0_AEIIRQ)
 
 /** \brief  1770, GTM Error Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_ERR          (0x1770U)
+#define OE_TC_SRC_GTM_GTM0_ERR          (0x1770U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_ERR.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_ERR.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_ERR.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_ERR.
  */
-#define OSEE_TC_SRC_GTMERR                (OSEE_TC_SRC_GTM_GTM0_ERR)
+#define OE_TC_SRC_GTMERR                (OE_TC_SRC_GTM_GTM0_ERR)
 
 /** \brief  1780, GTM TIM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TIM0_0       (0x1780U)
+#define OE_TC_SRC_GTM_GTM0_TIM0_0       (0x1780U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TIM0_0.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TIM0_0.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TIM0_0.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TIM0_0.
  */
-#define OSEE_TC_SRC_GTMTIM00              (OSEE_TC_SRC_GTM_GTM0_TIM0_0)
+#define OE_TC_SRC_GTMTIM00              (OE_TC_SRC_GTM_GTM0_TIM0_0)
 
 /** \brief  1784, GTM TIM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TIM0_1       (0x1784U)
+#define OE_TC_SRC_GTM_GTM0_TIM0_1       (0x1784U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TIM0_1.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TIM0_1.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TIM0_1.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TIM0_1.
  */
-#define OSEE_TC_SRC_GTMTIM01              (OSEE_TC_SRC_GTM_GTM0_TIM0_1)
+#define OE_TC_SRC_GTMTIM01              (OE_TC_SRC_GTM_GTM0_TIM0_1)
 
 /** \brief  1788, GTM TIM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TIM0_2       (0x1788U)
+#define OE_TC_SRC_GTM_GTM0_TIM0_2       (0x1788U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TIM0_2.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TIM0_2.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TIM0_2.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TIM0_2.
  */
-#define OSEE_TC_SRC_GTMTIM02              (OSEE_TC_SRC_GTM_GTM0_TIM0_2)
+#define OE_TC_SRC_GTMTIM02              (OE_TC_SRC_GTM_GTM0_TIM0_2)
 
 /** \brief  178C, GTM TIM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TIM0_3       (0x178CU)
+#define OE_TC_SRC_GTM_GTM0_TIM0_3       (0x178CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TIM0_3.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TIM0_3.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TIM0_3.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TIM0_3.
  */
-#define OSEE_TC_SRC_GTMTIM03              (OSEE_TC_SRC_GTM_GTM0_TIM0_3)
+#define OE_TC_SRC_GTMTIM03              (OE_TC_SRC_GTM_GTM0_TIM0_3)
 
 /** \brief  1790, GTM TIM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TIM0_4       (0x1790U)
+#define OE_TC_SRC_GTM_GTM0_TIM0_4       (0x1790U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TIM0_4.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TIM0_4.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TIM0_4.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TIM0_4.
  */
-#define OSEE_TC_SRC_GTMTIM04              (OSEE_TC_SRC_GTM_GTM0_TIM0_4)
+#define OE_TC_SRC_GTMTIM04              (OE_TC_SRC_GTM_GTM0_TIM0_4)
 
 /** \brief  1794, GTM TIM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TIM0_5       (0x1794U)
+#define OE_TC_SRC_GTM_GTM0_TIM0_5       (0x1794U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TIM0_5.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TIM0_5.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TIM0_5.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TIM0_5.
  */
-#define OSEE_TC_SRC_GTMTIM05              (OSEE_TC_SRC_GTM_GTM0_TIM0_5)
+#define OE_TC_SRC_GTMTIM05              (OE_TC_SRC_GTM_GTM0_TIM0_5)
 
 /** \brief  1798, GTM TIM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TIM0_6       (0x1798U)
+#define OE_TC_SRC_GTM_GTM0_TIM0_6       (0x1798U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TIM0_6.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TIM0_6.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TIM0_6.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TIM0_6.
  */
-#define OSEE_TC_SRC_GTMTIM06              (OSEE_TC_SRC_GTM_GTM0_TIM0_6)
+#define OE_TC_SRC_GTMTIM06              (OE_TC_SRC_GTM_GTM0_TIM0_6)
 
 /** \brief  179C, GTM TIM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TIM0_7       (0x179CU)
+#define OE_TC_SRC_GTM_GTM0_TIM0_7       (0x179CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TIM0_7.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TIM0_7.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TIM0_7.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TIM0_7.
  */
-#define OSEE_TC_SRC_GTMTIM07              (OSEE_TC_SRC_GTM_GTM0_TIM0_7)
+#define OE_TC_SRC_GTMTIM07              (OE_TC_SRC_GTM_GTM0_TIM0_7)
 
 /** \brief  1B80, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM0_0       (0x1B80U)
+#define OE_TC_SRC_GTM_GTM0_TOM0_0       (0x1B80U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM0_0.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM0_0.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM0_0.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM0_0.
  */
-#define OSEE_TC_SRC_GTMTOM00              (OSEE_TC_SRC_GTM_GTM0_TOM0_0)
+#define OE_TC_SRC_GTMTOM00              (OE_TC_SRC_GTM_GTM0_TOM0_0)
 
 /** \brief  1B84, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM0_1       (0x1B84U)
+#define OE_TC_SRC_GTM_GTM0_TOM0_1       (0x1B84U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM0_1.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM0_1.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM0_1.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM0_1.
  */
-#define OSEE_TC_SRC_GTMTOM01              (OSEE_TC_SRC_GTM_GTM0_TOM0_1)
+#define OE_TC_SRC_GTMTOM01              (OE_TC_SRC_GTM_GTM0_TOM0_1)
 
 /** \brief  1B88, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM0_2       (0x1B88U)
+#define OE_TC_SRC_GTM_GTM0_TOM0_2       (0x1B88U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM0_2.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM0_2.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM0_2.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM0_2.
  */
-#define OSEE_TC_SRC_GTMTOM02              (OSEE_TC_SRC_GTM_GTM0_TOM0_2)
+#define OE_TC_SRC_GTMTOM02              (OE_TC_SRC_GTM_GTM0_TOM0_2)
 
 /** \brief  1B8C, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM0_3       (0x1B8CU)
+#define OE_TC_SRC_GTM_GTM0_TOM0_3       (0x1B8CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM0_3.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM0_3.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM0_3.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM0_3.
  */
-#define OSEE_TC_SRC_GTMTOM03              (OSEE_TC_SRC_GTM_GTM0_TOM0_3)
+#define OE_TC_SRC_GTMTOM03              (OE_TC_SRC_GTM_GTM0_TOM0_3)
 
 /** \brief  1B90, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM0_4       (0x1B90U)
+#define OE_TC_SRC_GTM_GTM0_TOM0_4       (0x1B90U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM0_4.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM0_4.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM0_4.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM0_4.
  */
-#define OSEE_TC_SRC_GTMTOM04              (OSEE_TC_SRC_GTM_GTM0_TOM0_4)
+#define OE_TC_SRC_GTMTOM04              (OE_TC_SRC_GTM_GTM0_TOM0_4)
 
 /** \brief  1B94, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM0_5       (0x1B94U)
+#define OE_TC_SRC_GTM_GTM0_TOM0_5       (0x1B94U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM0_5.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM0_5.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM0_5.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM0_5.
  */
-#define OSEE_TC_SRC_GTMTOM05              (OSEE_TC_SRC_GTM_GTM0_TOM0_5)
+#define OE_TC_SRC_GTMTOM05              (OE_TC_SRC_GTM_GTM0_TOM0_5)
 
 /** \brief  1B98, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM0_6       (0x1B98U)
+#define OE_TC_SRC_GTM_GTM0_TOM0_6       (0x1B98U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM0_6.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM0_6.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM0_6.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM0_6.
  */
-#define OSEE_TC_SRC_GTMTOM06              (OSEE_TC_SRC_GTM_GTM0_TOM0_6)
+#define OE_TC_SRC_GTMTOM06              (OE_TC_SRC_GTM_GTM0_TOM0_6)
 
 /** \brief  1B9C, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM0_7       (0x1B9CU)
+#define OE_TC_SRC_GTM_GTM0_TOM0_7       (0x1B9CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM0_7.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM0_7.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM0_7.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM0_7.
  */
-#define OSEE_TC_SRC_GTMTOM07              (OSEE_TC_SRC_GTM_GTM0_TOM0_7)
+#define OE_TC_SRC_GTMTOM07              (OE_TC_SRC_GTM_GTM0_TOM0_7)
 
 /** \brief  1BA0, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM1_0       (0x1BA0U)
+#define OE_TC_SRC_GTM_GTM0_TOM1_0       (0x1BA0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM1_0.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM1_0.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM1_0.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM1_0.
  */
-#define OSEE_TC_SRC_GTMTOM10              (OSEE_TC_SRC_GTM_GTM0_TOM1_0)
+#define OE_TC_SRC_GTMTOM10              (OE_TC_SRC_GTM_GTM0_TOM1_0)
 
 /** \brief  1BA4, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM1_1       (0x1BA4U)
+#define OE_TC_SRC_GTM_GTM0_TOM1_1       (0x1BA4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM1_1.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM1_1.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM1_1.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM1_1.
  */
-#define OSEE_TC_SRC_GTMTOM11              (OSEE_TC_SRC_GTM_GTM0_TOM1_1)
+#define OE_TC_SRC_GTMTOM11              (OE_TC_SRC_GTM_GTM0_TOM1_1)
 
 /** \brief  1BA8, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM1_2       (0x1BA8U)
+#define OE_TC_SRC_GTM_GTM0_TOM1_2       (0x1BA8U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM1_2.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM1_2.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM1_2.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM1_2.
  */
-#define OSEE_TC_SRC_GTMTOM12              (OSEE_TC_SRC_GTM_GTM0_TOM1_2)
+#define OE_TC_SRC_GTMTOM12              (OE_TC_SRC_GTM_GTM0_TOM1_2)
 
 /** \brief  1BAC, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM1_3       (0x1BACU)
+#define OE_TC_SRC_GTM_GTM0_TOM1_3       (0x1BACU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM1_3.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM1_3.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM1_3.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM1_3.
  */
-#define OSEE_TC_SRC_GTMTOM13              (OSEE_TC_SRC_GTM_GTM0_TOM1_3)
+#define OE_TC_SRC_GTMTOM13              (OE_TC_SRC_GTM_GTM0_TOM1_3)
 
 /** \brief  1BB0, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM1_4       (0x1BB0U)
+#define OE_TC_SRC_GTM_GTM0_TOM1_4       (0x1BB0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM1_4.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM1_4.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM1_4.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM1_4.
  */
-#define OSEE_TC_SRC_GTMTOM14              (OSEE_TC_SRC_GTM_GTM0_TOM1_4)
+#define OE_TC_SRC_GTMTOM14              (OE_TC_SRC_GTM_GTM0_TOM1_4)
 
 /** \brief  1BB4, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM1_5       (0x1BB4U)
+#define OE_TC_SRC_GTM_GTM0_TOM1_5       (0x1BB4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM1_5.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM1_5.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM1_5.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM1_5.
  */
-#define OSEE_TC_SRC_GTMTOM15              (OSEE_TC_SRC_GTM_GTM0_TOM1_5)
+#define OE_TC_SRC_GTMTOM15              (OE_TC_SRC_GTM_GTM0_TOM1_5)
 
 /** \brief  1BB8, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM1_6       (0x1BB8U)
+#define OE_TC_SRC_GTM_GTM0_TOM1_6       (0x1BB8U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM1_6.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM1_6.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM1_6.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM1_6.
  */
-#define OSEE_TC_SRC_GTMTOM16              (OSEE_TC_SRC_GTM_GTM0_TOM1_6)
+#define OE_TC_SRC_GTMTOM16              (OE_TC_SRC_GTM_GTM0_TOM1_6)
 
 /** \brief  1BBC, GTM TOM Shared Service Request */
-#define OSEE_TC_SRC_GTM_GTM0_TOM1_7       (0x1BBCU)
+#define OE_TC_SRC_GTM_GTM0_TOM1_7       (0x1BBCU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_GTM_GTM0_TOM1_7.
- * To use register names with standard convention, please use OSEE_TC_SRC_GTM_GTM0_TOM1_7.
+/** Alias (User Manual Name) for OE_TC_SRC_GTM_GTM0_TOM1_7.
+ * To use register names with standard convention, please use OE_TC_SRC_GTM_GTM0_TOM1_7.
  */
-#define OSEE_TC_SRC_GTMTOM17              (OSEE_TC_SRC_GTM_GTM0_TOM1_7)
+#define OE_TC_SRC_GTMTOM17              (OE_TC_SRC_GTM_GTM0_TOM1_7)
 
 /** \brief  C30, PMU  Service Request */
-#define OSEE_TC_SRC_PMU_PMU0_SR           (0x0C30U)
+#define OE_TC_SRC_PMU_PMU0_SR           (0x0C30U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_PMU_PMU0_SR.
- * To use register names with standard convention, please use OSEE_TC_SRC_PMU_PMU0_SR.
+/** Alias (User Manual Name) for OE_TC_SRC_PMU_PMU0_SR.
+ * To use register names with standard convention, please use OE_TC_SRC_PMU_PMU0_SR.
  */
-#define OSEE_TC_SRC_PMU00                 (OSEE_TC_SRC_PMU_PMU0_SR)
+#define OE_TC_SRC_PMU00                 (OE_TC_SRC_PMU_PMU0_SR)
 
 /** \brief  C34, PMU  Service Request */
-#define OSEE_TC_SRC_PMU_PMU1_SR           (0x0C34U)
+#define OE_TC_SRC_PMU_PMU1_SR           (0x0C34U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_PMU_PMU1_SR.
- * To use register names with standard convention, please use OSEE_TC_SRC_PMU_PMU1_SR.
+/** Alias (User Manual Name) for OE_TC_SRC_PMU_PMU1_SR.
+ * To use register names with standard convention, please use OE_TC_SRC_PMU_PMU1_SR.
  */
-#define OSEE_TC_SRC_PMU01                 (OSEE_TC_SRC_PMU_PMU1_SR)
+#define OE_TC_SRC_PMU01                 (OE_TC_SRC_PMU_PMU1_SR)
 
 /** \brief  198, QSPI Error Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI0_ERR        (0x0198U)
+#define OE_TC_SRC_QSPI_QSPI0_ERR        (0x0198U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI0_ERR.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI0_ERR.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI0_ERR.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI0_ERR.
  */
-#define OSEE_TC_SRC_QSPI0ERR              (OSEE_TC_SRC_QSPI_QSPI0_ERR)
+#define OE_TC_SRC_QSPI0ERR              (OE_TC_SRC_QSPI_QSPI0_ERR)
 
 /** \brief  1A0, QSPI High Speed Capture Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI0_HC         (0x01A0U)
+#define OE_TC_SRC_QSPI_QSPI0_HC         (0x01A0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI0_HC.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI0_HC.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI0_HC.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI0_HC.
  */
-#define OSEE_TC_SRC_RESERVED10            (OSEE_TC_SRC_QSPI_QSPI0_HC)
+#define OE_TC_SRC_RESERVED10            (OE_TC_SRC_QSPI_QSPI0_HC)
 
 /** \brief  19C, QSPI Phase Transition Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI0_PT         (0x019CU)
+#define OE_TC_SRC_QSPI_QSPI0_PT         (0x019CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI0_PT.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI0_PT.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI0_PT.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI0_PT.
  */
-#define OSEE_TC_SRC_QSPI0PT               (OSEE_TC_SRC_QSPI_QSPI0_PT)
+#define OE_TC_SRC_QSPI0PT               (OE_TC_SRC_QSPI_QSPI0_PT)
 
 /** \brief  194, QSPI Receive Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI0_RX         (0x0194U)
+#define OE_TC_SRC_QSPI_QSPI0_RX         (0x0194U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI0_RX.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI0_RX.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI0_RX.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI0_RX.
  */
-#define OSEE_TC_SRC_QSPI0RX               (OSEE_TC_SRC_QSPI_QSPI0_RX)
+#define OE_TC_SRC_QSPI0RX               (OE_TC_SRC_QSPI_QSPI0_RX)
 
 /** \brief  190, QSPI Transmit Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI0_TX         (0x0190U)
+#define OE_TC_SRC_QSPI_QSPI0_TX         (0x0190U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI0_TX.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI0_TX.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI0_TX.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI0_TX.
  */
-#define OSEE_TC_SRC_QSPI0TX               (OSEE_TC_SRC_QSPI_QSPI0_TX)
+#define OE_TC_SRC_QSPI0TX               (OE_TC_SRC_QSPI_QSPI0_TX)
 
 /** \brief  1A4, QSPI User Defined Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI0_U          (0x01A4U)
+#define OE_TC_SRC_QSPI_QSPI0_U          (0x01A4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI0_U.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI0_U.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI0_U.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI0_U.
  */
-#define OSEE_TC_SRC_QSPI0U                (OSEE_TC_SRC_QSPI_QSPI0_U)
+#define OE_TC_SRC_QSPI0U                (OE_TC_SRC_QSPI_QSPI0_U)
 
 /** \brief  1B0, QSPI Error Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI1_ERR        (0x01B0U)
+#define OE_TC_SRC_QSPI_QSPI1_ERR        (0x01B0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI1_ERR.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI1_ERR.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI1_ERR.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI1_ERR.
  */
-#define OSEE_TC_SRC_QSPI1ERR              (OSEE_TC_SRC_QSPI_QSPI1_ERR)
+#define OE_TC_SRC_QSPI1ERR              (OE_TC_SRC_QSPI_QSPI1_ERR)
 
 /** \brief  1B8, QSPI High Speed Capture Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI1_HC         (0x01B8U)
+#define OE_TC_SRC_QSPI_QSPI1_HC         (0x01B8U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI1_HC.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI1_HC.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI1_HC.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI1_HC.
  */
-#define OSEE_TC_SRC_RESERVED11            (OSEE_TC_SRC_QSPI_QSPI1_HC)
+#define OE_TC_SRC_RESERVED11            (OE_TC_SRC_QSPI_QSPI1_HC)
 
 /** \brief  1B4, QSPI Phase Transition Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI1_PT         (0x01B4U)
+#define OE_TC_SRC_QSPI_QSPI1_PT         (0x01B4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI1_PT.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI1_PT.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI1_PT.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI1_PT.
  */
-#define OSEE_TC_SRC_QSPI1PT               (OSEE_TC_SRC_QSPI_QSPI1_PT)
+#define OE_TC_SRC_QSPI1PT               (OE_TC_SRC_QSPI_QSPI1_PT)
 
 /** \brief  1AC, QSPI Receive Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI1_RX         (0x01ACU)
+#define OE_TC_SRC_QSPI_QSPI1_RX         (0x01ACU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI1_RX.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI1_RX.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI1_RX.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI1_RX.
  */
-#define OSEE_TC_SRC_QSPI1RX               (OSEE_TC_SRC_QSPI_QSPI1_RX)
+#define OE_TC_SRC_QSPI1RX               (OE_TC_SRC_QSPI_QSPI1_RX)
 
 /** \brief  1A8, QSPI Transmit Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI1_TX         (0x01A8U)
+#define OE_TC_SRC_QSPI_QSPI1_TX         (0x01A8U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI1_TX.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI1_TX.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI1_TX.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI1_TX.
  */
-#define OSEE_TC_SRC_QSPI1TX               (OSEE_TC_SRC_QSPI_QSPI1_TX)
+#define OE_TC_SRC_QSPI1TX               (OE_TC_SRC_QSPI_QSPI1_TX)
 
 /** \brief  1BC, QSPI User Defined Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI1_U          (0x01BCU)
+#define OE_TC_SRC_QSPI_QSPI1_U          (0x01BCU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI1_U.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI1_U.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI1_U.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI1_U.
  */
-#define OSEE_TC_SRC_QSPI1U                (OSEE_TC_SRC_QSPI_QSPI1_U)
+#define OE_TC_SRC_QSPI1U                (OE_TC_SRC_QSPI_QSPI1_U)
 
 /** \brief  1C8, QSPI Error Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI2_ERR        (0x01C8U)
+#define OE_TC_SRC_QSPI_QSPI2_ERR        (0x01C8U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI2_ERR.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI2_ERR.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI2_ERR.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI2_ERR.
  */
-#define OSEE_TC_SRC_QSPI2ERR              (OSEE_TC_SRC_QSPI_QSPI2_ERR)
+#define OE_TC_SRC_QSPI2ERR              (OE_TC_SRC_QSPI_QSPI2_ERR)
 
 /** \brief  1D0, QSPI High Speed Capture Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI2_HC         (0x01D0U)
+#define OE_TC_SRC_QSPI_QSPI2_HC         (0x01D0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI2_HC.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI2_HC.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI2_HC.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI2_HC.
  */
-#define OSEE_TC_SRC_QSPI2HC               (OSEE_TC_SRC_QSPI_QSPI2_HC)
+#define OE_TC_SRC_QSPI2HC               (OE_TC_SRC_QSPI_QSPI2_HC)
 
 /** \brief  1CC, QSPI Phase Transition Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI2_PT         (0x01CCU)
+#define OE_TC_SRC_QSPI_QSPI2_PT         (0x01CCU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI2_PT.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI2_PT.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI2_PT.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI2_PT.
  */
-#define OSEE_TC_SRC_QSPI2PT               (OSEE_TC_SRC_QSPI_QSPI2_PT)
+#define OE_TC_SRC_QSPI2PT               (OE_TC_SRC_QSPI_QSPI2_PT)
 
 /** \brief  1C4, QSPI Receive Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI2_RX         (0x01C4U)
+#define OE_TC_SRC_QSPI_QSPI2_RX         (0x01C4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI2_RX.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI2_RX.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI2_RX.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI2_RX.
  */
-#define OSEE_TC_SRC_QSPI2RX               (OSEE_TC_SRC_QSPI_QSPI2_RX)
+#define OE_TC_SRC_QSPI2RX               (OE_TC_SRC_QSPI_QSPI2_RX)
 
 /** \brief  1C0, QSPI Transmit Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI2_TX         (0x01C0U)
+#define OE_TC_SRC_QSPI_QSPI2_TX         (0x01C0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI2_TX.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI2_TX.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI2_TX.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI2_TX.
  */
-#define OSEE_TC_SRC_QSPI2TX               (OSEE_TC_SRC_QSPI_QSPI2_TX)
+#define OE_TC_SRC_QSPI2TX               (OE_TC_SRC_QSPI_QSPI2_TX)
 
 /** \brief  1D4, QSPI User Defined Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI2_U          (0x01D4U)
+#define OE_TC_SRC_QSPI_QSPI2_U          (0x01D4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI2_U.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI2_U.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI2_U.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI2_U.
  */
-#define OSEE_TC_SRC_QSPI2U                (OSEE_TC_SRC_QSPI_QSPI2_U)
+#define OE_TC_SRC_QSPI2U                (OE_TC_SRC_QSPI_QSPI2_U)
 
 /** \brief  1E0, QSPI Error Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI3_ERR        (0x01E0U)
+#define OE_TC_SRC_QSPI_QSPI3_ERR        (0x01E0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI3_ERR.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI3_ERR.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI3_ERR.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI3_ERR.
  */
-#define OSEE_TC_SRC_QSPI3ERR              (OSEE_TC_SRC_QSPI_QSPI3_ERR)
+#define OE_TC_SRC_QSPI3ERR              (OE_TC_SRC_QSPI_QSPI3_ERR)
 
 /** \brief  1E8, QSPI High Speed Capture Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI3_HC         (0x01E8U)
+#define OE_TC_SRC_QSPI_QSPI3_HC         (0x01E8U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI3_HC.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI3_HC.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI3_HC.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI3_HC.
  */
-#define OSEE_TC_SRC_QSPI3HC               (OSEE_TC_SRC_QSPI_QSPI3_HC)
+#define OE_TC_SRC_QSPI3HC               (OE_TC_SRC_QSPI_QSPI3_HC)
 
 /** \brief  1E4, QSPI Phase Transition Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI3_PT         (0x01E4U)
+#define OE_TC_SRC_QSPI_QSPI3_PT         (0x01E4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI3_PT.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI3_PT.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI3_PT.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI3_PT.
  */
-#define OSEE_TC_SRC_QSPI3PT               (OSEE_TC_SRC_QSPI_QSPI3_PT)
+#define OE_TC_SRC_QSPI3PT               (OE_TC_SRC_QSPI_QSPI3_PT)
 
 /** \brief  1DC, QSPI Receive Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI3_RX         (0x01DCU)
+#define OE_TC_SRC_QSPI_QSPI3_RX         (0x01DCU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI3_RX.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI3_RX.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI3_RX.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI3_RX.
  */
-#define OSEE_TC_SRC_QSPI3RX               (OSEE_TC_SRC_QSPI_QSPI3_RX)
+#define OE_TC_SRC_QSPI3RX               (OE_TC_SRC_QSPI_QSPI3_RX)
 
 /** \brief  1D8, QSPI Transmit Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI3_TX         (0x01D8U)
+#define OE_TC_SRC_QSPI_QSPI3_TX         (0x01D8U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI3_TX.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI3_TX.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI3_TX.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI3_TX.
  */
-#define OSEE_TC_SRC_QSPI3TX               (OSEE_TC_SRC_QSPI_QSPI3_TX)
+#define OE_TC_SRC_QSPI3TX               (OE_TC_SRC_QSPI_QSPI3_TX)
 
 /** \brief  1EC, QSPI User Defined Service Request */
-#define OSEE_TC_SRC_QSPI_QSPI3_U          (0x01ECU)
+#define OE_TC_SRC_QSPI_QSPI3_U          (0x01ECU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_QSPI_QSPI3_U.
- * To use register names with standard convention, please use OSEE_TC_SRC_QSPI_QSPI3_U.
+/** Alias (User Manual Name) for OE_TC_SRC_QSPI_QSPI3_U.
+ * To use register names with standard convention, please use OE_TC_SRC_QSPI_QSPI3_U.
  */
-#define OSEE_TC_SRC_QSPI3U                (OSEE_TC_SRC_QSPI_QSPI3_U)
+#define OE_TC_SRC_QSPI3U                (OE_TC_SRC_QSPI_QSPI3_U)
 
 /** \brief  CD0, SCU DTS Busy Service Request */
-#define OSEE_TC_SRC_SCU_SCU_DTS           (0x0CD0U)
+#define OE_TC_SRC_SCU_SCU_DTS           (0x0CD0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SCU_SCU_DTS.
- * To use register names with standard convention, please use OSEE_TC_SRC_SCU_SCU_DTS.
+/** Alias (User Manual Name) for OE_TC_SRC_SCU_SCU_DTS.
+ * To use register names with standard convention, please use OE_TC_SRC_SCU_SCU_DTS.
  */
-#define OSEE_TC_SRC_SCUDTS                (OSEE_TC_SRC_SCU_SCU_DTS)
+#define OE_TC_SRC_SCUDTS                (OE_TC_SRC_SCU_SCU_DTS)
 
 /** \brief  CD4, SCU ERU Service Request */
-#define OSEE_TC_SRC_SCU_SCU_ERU0          (0x0CD4U)
+#define OE_TC_SRC_SCU_SCU_ERU0          (0x0CD4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SCU_SCU_ERU0.
- * To use register names with standard convention, please use OSEE_TC_SRC_SCU_SCU_ERU0.
+/** Alias (User Manual Name) for OE_TC_SRC_SCU_SCU_ERU0.
+ * To use register names with standard convention, please use OE_TC_SRC_SCU_SCU_ERU0.
  */
-#define OSEE_TC_SRC_SCUERU0               (OSEE_TC_SRC_SCU_SCU_ERU0)
+#define OE_TC_SRC_SCUERU0               (OE_TC_SRC_SCU_SCU_ERU0)
 
 /** \brief  CD8, SCU ERU Service Request */
-#define OSEE_TC_SRC_SCU_SCU_ERU1          (0x0CD8U)
+#define OE_TC_SRC_SCU_SCU_ERU1          (0x0CD8U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SCU_SCU_ERU1.
- * To use register names with standard convention, please use OSEE_TC_SRC_SCU_SCU_ERU1.
+/** Alias (User Manual Name) for OE_TC_SRC_SCU_SCU_ERU1.
+ * To use register names with standard convention, please use OE_TC_SRC_SCU_SCU_ERU1.
  */
-#define OSEE_TC_SRC_SCUERU1               (OSEE_TC_SRC_SCU_SCU_ERU1)
+#define OE_TC_SRC_SCUERU1               (OE_TC_SRC_SCU_SCU_ERU1)
 
 /** \brief  CDC, SCU ERU Service Request */
-#define OSEE_TC_SRC_SCU_SCU_ERU2          (0x0CDCU)
+#define OE_TC_SRC_SCU_SCU_ERU2          (0x0CDCU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SCU_SCU_ERU2.
- * To use register names with standard convention, please use OSEE_TC_SRC_SCU_SCU_ERU2.
+/** Alias (User Manual Name) for OE_TC_SRC_SCU_SCU_ERU2.
+ * To use register names with standard convention, please use OE_TC_SRC_SCU_SCU_ERU2.
  */
-#define OSEE_TC_SRC_SCUERU2               (OSEE_TC_SRC_SCU_SCU_ERU2)
+#define OE_TC_SRC_SCUERU2               (OE_TC_SRC_SCU_SCU_ERU2)
 
 /** \brief  CE0, SCU ERU Service Request */
-#define OSEE_TC_SRC_SCU_SCU_ERU3          (0x0CE0U)
+#define OE_TC_SRC_SCU_SCU_ERU3          (0x0CE0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SCU_SCU_ERU3.
- * To use register names with standard convention, please use OSEE_TC_SRC_SCU_SCU_ERU3.
+/** Alias (User Manual Name) for OE_TC_SRC_SCU_SCU_ERU3.
+ * To use register names with standard convention, please use OE_TC_SRC_SCU_SCU_ERU3.
  */
-#define OSEE_TC_SRC_SCUERU3               (OSEE_TC_SRC_SCU_SCU_ERU3)
+#define OE_TC_SRC_SCUERU3               (OE_TC_SRC_SCU_SCU_ERU3)
 
 /** \brief  350, SENT TRIG Service Request */
-#define OSEE_TC_SRC_SENT_SENT0_SR0        (0x0350U)
+#define OE_TC_SRC_SENT_SENT0_SR0        (0x0350U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SENT_SENT0_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_SENT_SENT0_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_SENT_SENT0_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_SENT_SENT0_SR0.
  */
-#define OSEE_TC_SRC_SENT0                 (OSEE_TC_SRC_SENT_SENT0_SR0)
+#define OE_TC_SRC_SENT0                 (OE_TC_SRC_SENT_SENT0_SR0)
 
 /** \brief  354, SENT TRIG Service Request */
-#define OSEE_TC_SRC_SENT_SENT0_SR1        (0x0354U)
+#define OE_TC_SRC_SENT_SENT0_SR1        (0x0354U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SENT_SENT0_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_SENT_SENT0_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_SENT_SENT0_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_SENT_SENT0_SR1.
  */
-#define OSEE_TC_SRC_SENT1                 (OSEE_TC_SRC_SENT_SENT0_SR1)
+#define OE_TC_SRC_SENT1                 (OE_TC_SRC_SENT_SENT0_SR1)
 
 /** \brief  358, SENT TRIG Service Request */
-#define OSEE_TC_SRC_SENT_SENT0_SR2        (0x0358U)
+#define OE_TC_SRC_SENT_SENT0_SR2        (0x0358U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SENT_SENT0_SR2.
- * To use register names with standard convention, please use OSEE_TC_SRC_SENT_SENT0_SR2.
+/** Alias (User Manual Name) for OE_TC_SRC_SENT_SENT0_SR2.
+ * To use register names with standard convention, please use OE_TC_SRC_SENT_SENT0_SR2.
  */
-#define OSEE_TC_SRC_SENT2                 (OSEE_TC_SRC_SENT_SENT0_SR2)
+#define OE_TC_SRC_SENT2                 (OE_TC_SRC_SENT_SENT0_SR2)
 
 /** \brief  35C, SENT TRIG Service Request */
-#define OSEE_TC_SRC_SENT_SENT0_SR3        (0x035CU)
+#define OE_TC_SRC_SENT_SENT0_SR3        (0x035CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SENT_SENT0_SR3.
- * To use register names with standard convention, please use OSEE_TC_SRC_SENT_SENT0_SR3.
+/** Alias (User Manual Name) for OE_TC_SRC_SENT_SENT0_SR3.
+ * To use register names with standard convention, please use OE_TC_SRC_SENT_SENT0_SR3.
  */
-#define OSEE_TC_SRC_SENT3                 (OSEE_TC_SRC_SENT_SENT0_SR3)
+#define OE_TC_SRC_SENT3                 (OE_TC_SRC_SENT_SENT0_SR3)
 
 /** \brief  D10, SMU Service Request */
-#define OSEE_TC_SRC_SMU_SMU0_SR0          (0x0D10U)
+#define OE_TC_SRC_SMU_SMU0_SR0          (0x0D10U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SMU_SMU0_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_SMU_SMU0_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_SMU_SMU0_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_SMU_SMU0_SR0.
  */
-#define OSEE_TC_SRC_SMU0                  (OSEE_TC_SRC_SMU_SMU0_SR0)
+#define OE_TC_SRC_SMU0                  (OE_TC_SRC_SMU_SMU0_SR0)
 
 /** \brief  D14, SMU Service Request */
-#define OSEE_TC_SRC_SMU_SMU0_SR1          (0x0D14U)
+#define OE_TC_SRC_SMU_SMU0_SR1          (0x0D14U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SMU_SMU0_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_SMU_SMU0_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_SMU_SMU0_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_SMU_SMU0_SR1.
  */
-#define OSEE_TC_SRC_SMU1                  (OSEE_TC_SRC_SMU_SMU0_SR1)
+#define OE_TC_SRC_SMU1                  (OE_TC_SRC_SMU_SMU0_SR1)
 
 /** \brief  D18, SMU Service Request */
-#define OSEE_TC_SRC_SMU_SMU0_SR2          (0x0D18U)
+#define OE_TC_SRC_SMU_SMU0_SR2          (0x0D18U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_SMU_SMU0_SR2.
- * To use register names with standard convention, please use OSEE_TC_SRC_SMU_SMU0_SR2.
+/** Alias (User Manual Name) for OE_TC_SRC_SMU_SMU0_SR2.
+ * To use register names with standard convention, please use OE_TC_SRC_SMU_SMU0_SR2.
  */
-#define OSEE_TC_SRC_SMU2                  (OSEE_TC_SRC_SMU_SMU0_SR2)
+#define OE_TC_SRC_SMU2                  (OE_TC_SRC_SMU_SMU0_SR2)
 
 /** \brief  490, System Timer  Service Request 0 */
-#define OSEE_TC_SRC_STM_STM0_SR0          (0x0490U)
+#define OE_TC_SRC_STM_STM0_SR0          (0x0490U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_STM_STM0_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_STM_STM0_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_STM_STM0_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_STM_STM0_SR0.
  */
-#define OSEE_TC_SRC_STM0SR0               (OSEE_TC_SRC_STM_STM0_SR0)
+#define OE_TC_SRC_STM0SR0               (OE_TC_SRC_STM_STM0_SR0)
 
 /** \brief  494, System Timer  Service Request 1 */
-#define OSEE_TC_SRC_STM_STM0_SR1          (0x0494U)
+#define OE_TC_SRC_STM_STM0_SR1          (0x0494U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_STM_STM0_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_STM_STM0_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_STM_STM0_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_STM_STM0_SR1.
  */
-#define OSEE_TC_SRC_STM0SR1               (OSEE_TC_SRC_STM_STM0_SR1)
+#define OE_TC_SRC_STM0SR1               (OE_TC_SRC_STM_STM0_SR1)
 
 /** \brief  AA0, VADC Common Group  Service Request 0 */
-#define OSEE_TC_SRC_VADC_CG0_SR0          (0x0AA0U)
+#define OE_TC_SRC_VADC_CG0_SR0          (0x0AA0U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_CG0_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_CG0_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_CG0_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_CG0_SR0.
  */
-#define OSEE_TC_SRC_VADCCG0SR0            (OSEE_TC_SRC_VADC_CG0_SR0)
+#define OE_TC_SRC_VADCCG0SR0            (OE_TC_SRC_VADC_CG0_SR0)
 
 /** \brief  AA4, VADC Common Group  Service Request 1 */
-#define OSEE_TC_SRC_VADC_CG0_SR1          (0x0AA4U)
+#define OE_TC_SRC_VADC_CG0_SR1          (0x0AA4U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_CG0_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_CG0_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_CG0_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_CG0_SR1.
  */
-#define OSEE_TC_SRC_VADCCG0SR1            (OSEE_TC_SRC_VADC_CG0_SR1)
+#define OE_TC_SRC_VADCCG0SR1            (OE_TC_SRC_VADC_CG0_SR1)
 
 /** \brief  AA8, VADC Common Group  Service Request 2 */
-#define OSEE_TC_SRC_VADC_CG0_SR2          (0x0AA8U)
+#define OE_TC_SRC_VADC_CG0_SR2          (0x0AA8U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_CG0_SR2.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_CG0_SR2.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_CG0_SR2.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_CG0_SR2.
  */
-#define OSEE_TC_SRC_VADCCG0SR2            (OSEE_TC_SRC_VADC_CG0_SR2)
+#define OE_TC_SRC_VADCCG0SR2            (OE_TC_SRC_VADC_CG0_SR2)
 
 /** \brief  AAC, VADC Common Group  Service Request 3 */
-#define OSEE_TC_SRC_VADC_CG0_SR3          (0x0AACU)
+#define OE_TC_SRC_VADC_CG0_SR3          (0x0AACU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_CG0_SR3.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_CG0_SR3.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_CG0_SR3.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_CG0_SR3.
  */
-#define OSEE_TC_SRC_VADCCG0SR3            (OSEE_TC_SRC_VADC_CG0_SR3)
+#define OE_TC_SRC_VADCCG0SR3            (OE_TC_SRC_VADC_CG0_SR3)
 
 /** \brief  980, VADC Group  Service Request 0 */
-#define OSEE_TC_SRC_VADC_G0_SR0           (0x0980U)
+#define OE_TC_SRC_VADC_G0_SR0           (0x0980U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_G0_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_G0_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_G0_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_G0_SR0.
  */
-#define OSEE_TC_SRC_VADCG0SR0             (OSEE_TC_SRC_VADC_G0_SR0)
+#define OE_TC_SRC_VADCG0SR0             (OE_TC_SRC_VADC_G0_SR0)
 
 /** \brief  984, VADC Group  Service Request 1 */
-#define OSEE_TC_SRC_VADC_G0_SR1           (0x0984U)
+#define OE_TC_SRC_VADC_G0_SR1           (0x0984U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_G0_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_G0_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_G0_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_G0_SR1.
  */
-#define OSEE_TC_SRC_VADCG0SR1             (OSEE_TC_SRC_VADC_G0_SR1)
+#define OE_TC_SRC_VADCG0SR1             (OE_TC_SRC_VADC_G0_SR1)
 
 /** \brief  988, VADC Group  Service Request 2 */
-#define OSEE_TC_SRC_VADC_G0_SR2           (0x0988U)
+#define OE_TC_SRC_VADC_G0_SR2           (0x0988U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_G0_SR2.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_G0_SR2.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_G0_SR2.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_G0_SR2.
  */
-#define OSEE_TC_SRC_VADCG0SR2             (OSEE_TC_SRC_VADC_G0_SR2)
+#define OE_TC_SRC_VADCG0SR2             (OE_TC_SRC_VADC_G0_SR2)
 
 /** \brief  98C, VADC Group  Service Request 3 */
-#define OSEE_TC_SRC_VADC_G0_SR3           (0x098CU)
+#define OE_TC_SRC_VADC_G0_SR3           (0x098CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_G0_SR3.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_G0_SR3.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_G0_SR3.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_G0_SR3.
  */
-#define OSEE_TC_SRC_VADCG0SR3             (OSEE_TC_SRC_VADC_G0_SR3)
+#define OE_TC_SRC_VADCG0SR3             (OE_TC_SRC_VADC_G0_SR3)
 
 /** \brief  990, VADC Group  Service Request 0 */
-#define OSEE_TC_SRC_VADC_G1_SR0           (0x0990U)
+#define OE_TC_SRC_VADC_G1_SR0           (0x0990U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_G1_SR0.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_G1_SR0.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_G1_SR0.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_G1_SR0.
  */
-#define OSEE_TC_SRC_VADCG1SR0             (OSEE_TC_SRC_VADC_G1_SR0)
+#define OE_TC_SRC_VADCG1SR0             (OE_TC_SRC_VADC_G1_SR0)
 
 /** \brief  994, VADC Group  Service Request 1 */
-#define OSEE_TC_SRC_VADC_G1_SR1           (0x0994U)
+#define OE_TC_SRC_VADC_G1_SR1           (0x0994U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_G1_SR1.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_G1_SR1.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_G1_SR1.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_G1_SR1.
  */
-#define OSEE_TC_SRC_VADCG1SR1             (OSEE_TC_SRC_VADC_G1_SR1)
+#define OE_TC_SRC_VADCG1SR1             (OE_TC_SRC_VADC_G1_SR1)
 
 /** \brief  998, VADC Group  Service Request 2 */
-#define OSEE_TC_SRC_VADC_G1_SR2           (0x0998U)
+#define OE_TC_SRC_VADC_G1_SR2           (0x0998U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_G1_SR2.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_G1_SR2.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_G1_SR2.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_G1_SR2.
  */
-#define OSEE_TC_SRC_VADCG1SR2             (OSEE_TC_SRC_VADC_G1_SR2)
+#define OE_TC_SRC_VADCG1SR2             (OE_TC_SRC_VADC_G1_SR2)
 
 /** \brief  99C, VADC Group  Service Request 3 */
-#define OSEE_TC_SRC_VADC_G1_SR3           (0x099CU)
+#define OE_TC_SRC_VADC_G1_SR3           (0x099CU)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_VADC_G1_SR3.
- * To use register names with standard convention, please use OSEE_TC_SRC_VADC_G1_SR3.
+/** Alias (User Manual Name) for OE_TC_SRC_VADC_G1_SR3.
+ * To use register names with standard convention, please use OE_TC_SRC_VADC_G1_SR3.
  */
-#define OSEE_TC_SRC_VADCG1SR3             (OSEE_TC_SRC_VADC_G1_SR3)
+#define OE_TC_SRC_VADCG1SR3             (OE_TC_SRC_VADC_G1_SR3)
 
 /** \brief  48, XBAR_SRI Service Request */
-#define OSEE_TC_SRC_XBAR_XBAR_SRC         (0x0048U)
+#define OE_TC_SRC_XBAR_XBAR_SRC         (0x0048U)
 
-/** Alias (User Manual Name) for OSEE_TC_SRC_XBAR_XBAR_SRC.
- * To use register names with standard convention, please use OSEE_TC_SRC_XBAR_XBAR_SRC.
+/** Alias (User Manual Name) for OE_TC_SRC_XBAR_XBAR_SRC.
+ * To use register names with standard convention, please use OE_TC_SRC_XBAR_XBAR_SRC.
  */
-#define OSEE_TC_SRC_XBARSRC               (OSEE_TC_SRC_XBAR_XBAR_SRC)
+#define OE_TC_SRC_XBARSRC               (OE_TC_SRC_XBAR_XBAR_SRC)
 
 /******************************************************************************/
 /******************************************************************************/
-#endif /* OSEE_TC_SRC_H */
+#endif /* OE_TC_SRC_H */

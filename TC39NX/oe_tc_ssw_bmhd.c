@@ -54,7 +54,7 @@
 #pragma section CONST ".bmhd_0_orig" far-absolute R
 #endif
 
-const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_0_orig =
+const OE_tc_ssw_bmhd OE_tc_bmhd_0_orig =
 {
   0x00FE,     /**< \brief 0x000: .bmi: Boot Mode Index (BMI)*/
   0xB359,     /**< \brief 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H*/
@@ -116,7 +116,7 @@ const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_0_orig =
 #if defined(__DCC__)
 #pragma section CONST ".bmhd_0_copy" far-absolute R
 #endif
-const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_0_copy =
+const OE_tc_ssw_bmhd OE_tc_bmhd_0_copy =
 {
   0x00FE,     /**< \brief 0x000: .bmi: Boot Mode Index (BMI)*/
   0xB359,     /**< \brief 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H*/
@@ -178,7 +178,7 @@ const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_0_copy =
 #if defined(__DCC__)
 #pragma section CONST ".bmhd_1_orig" far-absolute R
 #endif
-const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_1_orig =
+const OE_tc_ssw_bmhd OE_tc_bmhd_1_orig =
 {
   0x00FE,     /**< \brief 0x000: .bmi: Boot Mode Index (BMI)*/
   0xB359,     /**< \brief 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H*/
@@ -240,7 +240,7 @@ const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_1_orig =
 #if defined(__DCC__)
 #pragma section CONST ".bmhd_1_copy" far-absolute R
 #endif
-const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_1_copy=
+const OE_tc_ssw_bmhd OE_tc_bmhd_1_copy=
 {
   0x00FE,     /**< \brief 0x000: .bmi: Boot Mode Index (BMI)*/
   0xB359,     /**< \brief 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H*/
@@ -302,7 +302,7 @@ const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_1_copy=
 #if defined(__DCC__)
 #pragma section CONST ".bmhd_2_orig" far-absolute R
 #endif
-const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_2_orig=
+const OE_tc_ssw_bmhd OE_tc_bmhd_2_orig=
 {
   0x00FE,     /**< \brief 0x000: .bmi: Boot Mode Index (BMI)*/
   0xB359,     /**< \brief 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H*/
@@ -364,7 +364,7 @@ const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_2_orig=
 #if defined(__DCC__)
 #pragma section CONST ".bmhd_2_copy" far-absolute R
 #endif
-const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_2_copy =
+const OE_tc_ssw_bmhd OE_tc_bmhd_2_copy =
 {
   0x00FE,     /**< \brief 0x000: .bmi: Boot Mode Index (BMI)*/
   0xB359,     /**< \brief 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H*/
@@ -426,7 +426,7 @@ const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_2_copy =
 #if defined(__DCC__)
 #pragma section CONST ".bmhd_3_orig" far-absolute R
 #endif
-const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_3_orig =
+const OE_tc_ssw_bmhd OE_tc_bmhd_3_orig =
 {
   0x00FE,     /**< \brief 0x000: .bmi: Boot Mode Index (BMI)*/
   0xB359,     /**< \brief 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H*/
@@ -488,7 +488,7 @@ const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_3_orig =
 #if defined(__DCC__)
 #pragma section CONST ".bmhd_3_copy" far-absolute R
 #endif
-const OSEE_tc_ssw_bmhd OSEE_tc_bmhd_3_copy =
+const OE_tc_ssw_bmhd OE_tc_bmhd_3_copy =
 {
   0x00FE,     /**< \brief 0x000: .bmi: Boot Mode Index (BMI)*/
   0xB359,     /**< \brief 0x002: .bmhdid: Boot Mode Header ID (CODE) = B359H*/
